@@ -1,0 +1,4 @@
+#ingnore all the .o files, .elf files in all the directories
+*.o
+*.elf
+

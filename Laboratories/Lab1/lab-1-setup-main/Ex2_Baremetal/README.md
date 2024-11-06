@@ -1,0 +1,139 @@
+## Exercise 2: Bare Metal Simulation
+
+In this exercise, we will simulate a simple bare metal system using QEMU. A bare metal simulation
+refers to running a system without an operating system, allowing direct interaction with the
+hardware. QEMU facilitates this by simulating a complete hardware system, including the CPU, memory,
+and peripherals. In this exercise, you will simulate a simple ARM Cortex-M4 system with a UART
+peripheral, specifically the Netduino Plus 2 board.
+
+### Package Installation
+
+**Installing QEMU System Emulation**
+
+To get started, install the QEMU System Emulation package by running the following command:
+
+```bash
+sudo apt install qemu-system-arm
+```
+
+**Installing the ARM Cross-Compiler*
+After installing QEMU System Emulation, you need to install the ARM cross-compiler. previously we
+have installed the `gcc-arm-linux-gnueabi ` package that amis to compile code for the ARM
+architecture on linux system. However, in this exercise we will use the `gcc-arm-none-eabi` package,
+since now we will compile code for a bare metal system without an operating system. To install run
+the following command:
+
+```bash
+sudo apt install gcc-arm-none-eabi
+```
+
+### Create the Bare Metal Program
+To create a simple bare metal we will need to create three different files: a main.c file, a
+linker.ld file and a startup file. The main.c file contains the main function of the program, the
+linker file is used to define the memory regions of the program, and the startup file is used to
+define the entry point of the program. 
+
+**Create main.c**
+- The main.c file contains a simple program that prints the message "Hello world!" to the UART
+  peripheral. The UART peripheral is memory-mapped to the address 0x40011004. The program writes
+  each character of the message to the UART peripheral until the end of the string is reached. The
+  program then enters an infinite loop.
+  The main.c file should look like this:
+    ```c 
+    volatile unsigned int *const USART1_PTR = (unsigned int *)0x40011004;
+
+    void my_printf(const char *s) {
+        while(*s != '\0') { /* Loop until end of string */
+            *USART1_PTR= (unsigned int)(*s); /* Transmit char */
+            s++; /* Next char */
+        }
+    }
+
+    int main(void) {
+            my_printf("Hello world!\n");
+    }
+    ```
+**Create startup.s file**
+- The `startup.s` file is used to define the entry point of the program. This is a simple assembly file
+  and it is where the execution starts. The startup file should look like this:
+    ```asm
+    .word stack_top     // Address of the stack_top
+    .word _start // Address of the _start label
+
+    // The thumb_func is used to make sure the function is in thumb mode,
+    // which is required for the Cortex-M0+.
+    .thumb_func 
+    .global _start
+
+    _start:
+        BL main
+        B .
+    ```
+**Create linker.ld file**
+- The `linker.ld` file is used to define the memory regions of the program. The memory regions include
+  the text section (code), the data section (initialized variables), the bss section (uninitialized
+  variables), and the stack section. The stack section is defined to the last RAM address of the
+  board. The linker file should look like this:
+    ```ld
+    /* ENTRY directive defines the entry point of the program */
+    ENTRY(_start)
+
+    /* SECTIONS directive defines the memory regions of the program */
+    SECTIONS
+    {
+        /* text section (code)*/
+        .text : { *(.text*) } 		
+        /* data section, initialized variables */
+        .data : { *(.data) }
+        /* bss section, uninitialized variables */
+        .bss : { *(.bss*) }
+        /* stack section 
+        Define the stack to the last RAM address of the NetduinoPlus2 board */
+        stack_top = 0x2001ffff; 
+    }
+    ```
+**Compile and run the program:**
+- To compile the `startup.s` file, use the following command:
+    ```bash
+    arm-none-eabi-as -mcpu=cortex-m4 startup.s -o startup.o
+    ```
+the `arm-none-eabi-as` command is used to assemble the file, the `-mcpu` flag specifies the target
+architecture, remember that the NetduinoPlus2 board use the ARM Cortex-M4 architecture.
+
+- To compile the `main.c` file, use the following command:
+    ```bash
+    arm-none-eabi-gcc -c -mcpu=cortex-m4 -mthumb main.c -o main.o
+    ```
+Here we are using the `arm-none-eabi-gcc` command to compile the file (bare metal system), the `-c`
+flag specifies to compile the source file without linking (since we will do this manually) and the
+`-mtumb` flag specifies to use the Thumb instruction set that is required for the Cortex-M4
+architecture.
+
+- Now we need to link the object files together, to do so use the following command:
+    ```bash
+    arm-none-eabi-ld -T linker.ld startup.o main.o -o main.elf
+    ```
+The -ld specifies to link the object files. The -T flag specifies the linker script file. The
+main.o and startup.o files are the object files generated by the compiler.
+
+### QEMU Simulation
+Now that we have compiled the program we can run it on QEMU. To run the program on QEMU, use the
+following command:
+```bash
+qemu-system-arm -M netduino2 -nographic -kernel main.elf
+```
+The -M flag specifies the machine type to simulate. In this case, it is the Netduino Plus 2 board,
+the -nographic flag specifies to run QEMU without a graphical interface. The -kernel flag specifies
+the kernel image to run. In this case it is the main.elf file.
+
+Now the program should be running on QEMU. You should see the message "Hello world!" printed on the
+terminal. The process will be in an infinite loop. To end the simulation, press `Ctrl + A` and then
+`X`.
+
+You have successfully created a simple bare metal program and simulated it on QEMU. In the next
+exercise, you will learn how to debug a bare metal program using GDB and QEMU. 
+
+- [Next: Exercise 3: Debugging with GDB](./Ex3_GDB/README.md)
+- [Home](../README.md)
+```
+

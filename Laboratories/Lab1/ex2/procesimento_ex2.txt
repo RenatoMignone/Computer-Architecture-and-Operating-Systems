@@ -1,0 +1,27 @@
+innanzitutto per poter eseguire e compilare il nostro programma su un sistema BareMetal, ovvero senza un sistema operativo, dobbiamo installare un tool di qemu che ci emuli un sistema senza sistema operativo. Il tutto viene eseguire tramite il comando:
+- sudo apt install qemu-system-arm
+
+dopodichè dobbiamo installare il cross compiler per ARM da usare in modalità bare metal senza OS:
+- sudo apt install gcc-arm-none-eabi
+
+dopo averlo isntallato andiamo a creare un programma che possa essere eseguito senza OS. Creiamo innanzittutto 3 file differenti, di cui uno il nostro main, al cui interno andiamo ad inserire il codice di un banale printf, creato però in modo tale che possa essere runnato senza OS.
+
+dopodichè creiamo un programma in asm, chiamato startup.s, grazie al quale eseguiamo lo startup del main.
+
+infine abbiamo il linker.ld, usato per definire le regioni di memoria usate dal nostro programma.
+
+Here we are using the `arm-none-eabi-gcc` command to compile the file (bare metal system), the `-c`
+flag specifies to compile the source file without linking (since we will do this manually) and the
+`-mtumb` flag specifies to use the Thumb instruction set that is required for the Cortex-M4
+architecture.
+
+
+ora dobbiamo andare ad eseguire manualmente il linking tra i vari file oggetto, per farlo utilizziamo il seguente comando:
+
+- arm-none-eabi-ld -T linker.ld startup.o main.o -o main.elf
+ 
+
+infine come ultimo processo andiamo effettivamente ad eseguire il nostro programma in bare metal, andando a specificare alcune flag in modo da poter personalizzarne l'esecuzione:
+
+- qemu-system-arm -M netduino2 -nographic -kernel main.elf
+

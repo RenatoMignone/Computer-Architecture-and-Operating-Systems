@@ -1,0 +1,12 @@
+Per compilare il programma normalmente per l'utente (host) andiamo ad utilizzare il normale compilatore gcc. 
+
+Per compilare invece il programma tramite GCC arm based, dobbiamo utilizzare un comando differente, ovvero :  
+- arm-linux-gnueabi-gcc -o helloarm.o -static hello.c
+
+Successivametne andiamo ad installare qemu-user sulla nostra macchina per andare ad emulare un ambiente ARM di nostro interesse.
+
+Per poter al momento compilare il nostro codice compilato con ARM GCC compiler, dobbiamo andare a specificare di voler runnare tale programma su un ambiente emulato, ovvero in questo caso tramite qemu: 
+- qemu-arm helloarm.o
+
+
+

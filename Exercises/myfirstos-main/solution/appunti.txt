@@ -1,0 +1,56 @@
+In this file we have got 3 different files:
+- 
+- 
+- 
+
+we can compile all the files toghether, we are using the stdint lib because we want to work with the int of a size of 32 bits.
+
+if you do not volatile, the entire set of code will be stripped out. In this case you want the var to be put exactly in the place we want. when we program so low level, the compiler has to do less tasks.
+
+we are using the external flag because the function is in another external c file, we are telling to the compiler to do not care about that particular "error", the linker will do the next.
+
+the 2 tasks have to be executed in an alternate way in this OS. This is na OS so we want the 2 funct to run as independent programs. In this way every fun stores info in an independent way. The OS will be able to call the fun, but before it we jave to do a context switch, loading in the stack pointer the address of the right function.
+
+ve to define data structures used to run programs. The only data structure in this case will be the stack pointer. We have to define the memory region to define it.
+
+inside the switch we need to switch the tasks inside the microprocessor. If you want to change the SP is low level moving a different level in the section. We need to use in line asm.
+
+we need to save the current sp so that we do not lose it. %0 is the directive to the inline asm.
+
+also the : means a directive, instead of %0 in the program, use the value pointed by the current stack pointer. 
+
+This asm code, saves the content of sp in a permanent register used for the current sp value.
+
+we have to understand why he pur R instead of =r inside the last asm code.
+
+
+
+now we can call this function everytime we want to context switch the stack pointer.
+
+we need to study how to write in line asm in C to understand better.
+
+now we can modify the main.
+
+the scheduler in this case will be an infinite loop that will call the single tasks. 
+
+in the switch we need 2 memory locations, the first one is the location of the sp. The second one must be the stack of the 2 task. 
+
+we now writing a simple version, not optimized and nice, (it will be reinitializing tasks not keeping the memo of the tasks).
+
+if you in reality want to do the same stuff you have to save the value that was prev stored (?).
+
+we have done, we have an OS.
+
+we go in the solution and do the make command. as we can see we will have displayed the various commands executed.
+
+now i have the main.elf that is the binary image of our OS.
+
+to run we run: 
+qemu-system-arm -M netduino2 -nographic -kernel main.elf
+
+
+
+why we used =r and then r.
+make sure this runs on our machine.
+try to play with it, trying to change the OS.
+try to debug it.

@@ -1,0 +1,5 @@
+# Ignore files generated during compilation
+*.elf
+*.o
+*.i
+*.s

@@ -1,0 +1,5 @@
+per iniziare dobbiamo andare ad installare un debugger che ci consenta di inspezionare e modificare lo stato del programma mentre è in esecuzione.
+
+abbiamo innanzitutto installato il debugger.
+
+dopodichè andiamo a compilare il codice sum.s per poter displayare il codice.
