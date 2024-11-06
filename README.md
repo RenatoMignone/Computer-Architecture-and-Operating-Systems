@@ -1,6 +1,6 @@
 # Computer Architectures and Operating Systems
 
-This repository contains materials and code for the **Computer Architectures and Operating Systems** course. In this course, we explore the foundational principles of computer architecture and operating systems, with an emphasis on real-time systems.
+This repository contains materials and code for the **Computer Architectures and Operating Systems** course. In this course, we explore the foundational principles of computer architecture and operating systems, with an emphasis on real-time embedded systems.
 
 ## Course Overview
 
