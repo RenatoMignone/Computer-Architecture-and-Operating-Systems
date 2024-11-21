@@ -45,6 +45,8 @@ extern uint32_t _estack;
 /* Vector table. */
 const uint32_t* isr_vector[] __attribute__((section(".isr_vector"), used)) =
 {
+    //for every interrupt we have got the name of the interrupt. When you power one the microprocessor, you need to know that the table is in a given location in the memory.
+    //Every element in this table, corresponds to a given interrupt, this is based on the data sheet of the board, in particular all the zeros means that i do not have any routine associated to that given interrupt. You will jump to a null pointer in that case. If you look at the routines, there are a lot of routines that handle the low level stuffs, hardfaults etc.
     ( uint32_t * ) &_estack,
     ( uint32_t * ) &Reset_Handler,     // Reset                -15
     ( uint32_t * ) &Default_Handler,   // NMI_Handler          -14
@@ -69,6 +71,7 @@ const uint32_t* isr_vector[] __attribute__((section(".isr_vector"), used)) =
     0,
     0,
     0,
+    //we set 2 handlers for the 2 available timers, if that timer generates an interrupt, the program will handle the interrupt with the handler that we have defined.
     ( uint32_t * ) TIMER0_Handler,     // Timer 0
     ( uint32_t * ) TIMER1_Handler,     // Timer 1
     0,
