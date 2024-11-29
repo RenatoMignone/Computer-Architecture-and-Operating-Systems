@@ -1,0 +1,1 @@
+savedcmd_/home/ren/CyberSecurity/CAOS/Exercises/linux-kernelmodules/hello/hello-5.mod := printf '%s\n'   hello-5.o | awk '!x[$$0]++ { print("/home/ren/CyberSecurity/CAOS/Exercises/linux-kernelmodules/hello/"$$0) }' > /home/ren/CyberSecurity/CAOS/Exercises/linux-kernelmodules/hello/hello-5.mod

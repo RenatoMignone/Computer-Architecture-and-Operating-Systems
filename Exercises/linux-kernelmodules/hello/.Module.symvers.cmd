@@ -1,0 +1,1 @@
+savedcmd_/home/ren/CyberSecurity/CAOS/Exercises/linux-kernelmodules/hello/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/ren/CyberSecurity/CAOS/Exercises/linux-kernelmodules/hello/Module.symvers -T /home/ren/CyberSecurity/CAOS/Exercises/linux-kernelmodules/hello/modules.order -i Module.symvers -e 
