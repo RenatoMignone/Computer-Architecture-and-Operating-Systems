@@ -1,0 +1,1 @@
+savedcmd_/home/ren/CyberSecurity/CAOS/Laboratories/Lab6/startstop.o := ld -m elf_x86_64 -z noexecstack --no-warn-rwx-segments   -r -o /home/ren/CyberSecurity/CAOS/Laboratories/Lab6/startstop.o @/home/ren/CyberSecurity/CAOS/Laboratories/Lab6/startstop.mod 

@@ -1,0 +1,1 @@
+savedcmd_/home/ren/CyberSecurity/CAOS/Laboratories/Lab6/esercizio1.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/ren/CyberSecurity/CAOS/Laboratories/Lab6/esercizio1.ko /home/ren/CyberSecurity/CAOS/Laboratories/Lab6/esercizio1.o /home/ren/CyberSecurity/CAOS/Laboratories/Lab6/esercizio1.mod.o

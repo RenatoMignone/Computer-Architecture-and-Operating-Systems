@@ -1,0 +1,60 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper, margin=.9in]{geometry}
+
+% necessary packages and doc parameters
+\usepackage{graphicx, amssymb}
+\usepackage{url, hyperref}
+\usepackage{array}
+\usepackage[table,dvipsnames]{xcolor}
+\usepackage{afterpage}
+\usepackage{fix-cm}
+\usepackage{sectsty}
+\usepackage[export]{adjustbox}
+\usepackage{setspace}
+\usepackage[linguistics]{forest}
+\usepackage{cclicenses}
+
+% Draw graphs (graphic package in general)
+\usepackage{tikz}
+
+\setlength\textwidth{6.5in}
+\setlength\textheight{8in}
+
+\definecolor{FSBlue}{HTML}{13284c}
+\definecolor{FSRed}{RGB}{177, 16, 44}
+
+\usepackage{newtxmath}
+\doublespacing
+
+\sectionfont{\color{FSBlue}}
+\subsectionfont{\color{FSRed}}
+
+\begin{document}
+
+\input{title}
+
+%\tableofcontents
+\newpage
+
+\input{sections/exercise1}
+
+\vfill
+
+\begin{flushright}
+    \copyright  2023 Stefano Di Carlo - stefano.dicarlo [at] polito [dot] com.
+
+    This work is licensed under a Creative Commons Attribution-NonCommercial 3.0 (CC BY-NC 3.0).
+    To view a copy of this license, visit:
+ 
+    \url{https://creativecommons.org/licenses/by-nc/3.0/legalcode}.
+\end{flushright}
+
+% Include image from images directory
+\begin{figure}[h]
+    \begin{flushright}    
+        \includegraphics{images/by-nc.png}
+        \label{fig:by-nc}
+    \end{flushright}
+\end{figure}
+
+\end{document}

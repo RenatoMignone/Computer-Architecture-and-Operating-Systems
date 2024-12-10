@@ -70,7 +70,7 @@ void CentralMonitorTask(void *pvParameters) {
     }
 }
 
-void SensorTask(void *pvParameters) {
+void SensorThow to use the rand() function in FreeRTOS, to let it give me a rand value between 1 2 and 3 ask(void *pvParameters) {
     SensorMessage message;
     while (1) {
         // Simulate random sensor updates

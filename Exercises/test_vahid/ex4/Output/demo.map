@@ -59,19 +59,19 @@ Discarded input sections
  .text.uxTaskPriorityGet
                 0x00000000       0x1c ./Output/tasks.o
  .text.uxTaskPriorityGetFromISR
-                0x00000000       0x30 ./Output/tasks.o
+                0x00000000       0x34 ./Output/tasks.o
  .text.uxTaskBasePriorityGet
                 0x00000000       0x1c ./Output/tasks.o
  .text.uxTaskBasePriorityGetFromISR
-                0x00000000       0x30 ./Output/tasks.o
+                0x00000000       0x34 ./Output/tasks.o
  .text.vTaskPrioritySet
                 0x00000000       0xdc ./Output/tasks.o
  .text.vTaskResume
                 0x00000000       0x88 ./Output/tasks.o
  .text.xTaskResumeFromISR
-                0x00000000       0xa8 ./Output/tasks.o
+                0x00000000       0xac ./Output/tasks.o
  .text.vTaskEndScheduler
-                0x00000000       0x34 ./Output/tasks.o
+                0x00000000       0x38 ./Output/tasks.o
  .text.xTaskGetTickCount
                 0x00000000        0xc ./Output/tasks.o
  .text.xTaskGetTickCountFromISR
@@ -113,9 +113,9 @@ Discarded input sections
  .text.xTaskGenericNotify
                 0x00000000      0x104 ./Output/tasks.o
  .text.xTaskGenericNotifyFromISR
-                0x00000000      0x148 ./Output/tasks.o
+                0x00000000      0x14c ./Output/tasks.o
  .text.vTaskGenericNotifyGiveFromISR
-                0x00000000       0xf4 ./Output/tasks.o
+                0x00000000       0xf8 ./Output/tasks.o
  .text.xTaskGenericNotifyStateClear
                 0x00000000       0x38 ./Output/tasks.o
  .text.ulTaskGenericNotifyValueClear
@@ -238,9 +238,9 @@ Discarded input sections
  .text.xQueueGiveMutexRecursive
                 0x00000000       0x2e ./Output/queue.o
  .text.xQueueGenericSendFromISR
-                0x00000000       0xb2 ./Output/queue.o
+                0x00000000       0xb6 ./Output/queue.o
  .text.xQueueGiveFromISR
-                0x00000000       0x92 ./Output/queue.o
+                0x00000000       0x96 ./Output/queue.o
  .text.xQueueReceive
                 0x00000000      0x10c ./Output/queue.o
  .text.xQueueTakeMutexRecursive
@@ -248,9 +248,9 @@ Discarded input sections
  .text.xQueuePeek
                 0x00000000      0x108 ./Output/queue.o
  .text.xQueueReceiveFromISR
-                0x00000000       0x88 ./Output/queue.o
+                0x00000000       0x8c ./Output/queue.o
  .text.xQueuePeekFromISR
-                0x00000000       0x44 ./Output/queue.o
+                0x00000000       0x48 ./Output/queue.o
  .text.uxQueueMessagesWaiting
                 0x00000000       0x16 ./Output/queue.o
  .text.uxQueueSpacesAvailable
@@ -702,301 +702,301 @@ END GROUP
                 0x000003ec                xTaskCreate
 
 .text.vTaskStartScheduler
-                0x000005ac       0x7c
+                0x000005ac       0x80
  .text.vTaskStartScheduler
-                0x000005ac       0x7c ./Output/tasks.o
+                0x000005ac       0x80 ./Output/tasks.o
                 0x000005ac                vTaskStartScheduler
 
 .text.vTaskSuspendAll
-                0x00000628       0x10
+                0x0000062c       0x10
  .text.vTaskSuspendAll
-                0x00000628       0x10 ./Output/tasks.o
-                0x00000628                vTaskSuspendAll
+                0x0000062c       0x10 ./Output/tasks.o
+                0x0000062c                vTaskSuspendAll
 
 .text.uxTaskGetNumberOfTasks
-                0x00000638        0xc
+                0x0000063c        0xc
  .text.uxTaskGetNumberOfTasks
-                0x00000638        0xc ./Output/tasks.o
-                0x00000638                uxTaskGetNumberOfTasks
+                0x0000063c        0xc ./Output/tasks.o
+                0x0000063c                uxTaskGetNumberOfTasks
 
 .text.xTaskIncrementTick
-                0x00000644      0x180
+                0x00000648      0x180
  .text.xTaskIncrementTick
-                0x00000644      0x180 ./Output/tasks.o
-                0x00000644                xTaskIncrementTick
+                0x00000648      0x180 ./Output/tasks.o
+                0x00000648                xTaskIncrementTick
 
 .text.xTaskResumeAll
-                0x000007c4      0x150
+                0x000007c8      0x150
  .text.xTaskResumeAll
-                0x000007c4      0x150 ./Output/tasks.o
-                0x000007c4                xTaskResumeAll
+                0x000007c8      0x150 ./Output/tasks.o
+                0x000007c8                xTaskResumeAll
 
 .text.vTaskDelay
-                0x00000914       0x3c
+                0x00000918       0x3c
  .text.vTaskDelay
-                0x00000914       0x3c ./Output/tasks.o
-                0x00000914                vTaskDelay
+                0x00000918       0x3c ./Output/tasks.o
+                0x00000918                vTaskDelay
 
 .text.vTaskSwitchContext
-                0x00000950       0x68
+                0x00000954       0x68
  .text.vTaskSwitchContext
-                0x00000950       0x68 ./Output/tasks.o
-                0x00000950                vTaskSwitchContext
+                0x00000954       0x68 ./Output/tasks.o
+                0x00000954                vTaskSwitchContext
 
 .text.vTaskPlaceOnEventList
-                0x000009b8       0x24
+                0x000009bc       0x24
  .text.vTaskPlaceOnEventList
-                0x000009b8       0x24 ./Output/tasks.o
-                0x000009b8                vTaskPlaceOnEventList
+                0x000009bc       0x24 ./Output/tasks.o
+                0x000009bc                vTaskPlaceOnEventList
 
 .text.xTaskRemoveFromEventList
-                0x000009dc       0xbc
+                0x000009e0       0xbc
  .text.xTaskRemoveFromEventList
-                0x000009dc       0xbc ./Output/tasks.o
-                0x000009dc                xTaskRemoveFromEventList
+                0x000009e0       0xbc ./Output/tasks.o
+                0x000009e0                xTaskRemoveFromEventList
 
 .text.vTaskInternalSetTimeOutState
-                0x00000a98       0x18
+                0x00000a9c       0x18
  .text.vTaskInternalSetTimeOutState
-                0x00000a98       0x18 ./Output/tasks.o
-                0x00000a98                vTaskInternalSetTimeOutState
+                0x00000a9c       0x18 ./Output/tasks.o
+                0x00000a9c                vTaskInternalSetTimeOutState
 
 .text.xTaskCheckForTimeOut
-                0x00000ab0       0x70
+                0x00000ab4       0x70
  .text.xTaskCheckForTimeOut
-                0x00000ab0       0x70 ./Output/tasks.o
-                0x00000ab0                xTaskCheckForTimeOut
+                0x00000ab4       0x70 ./Output/tasks.o
+                0x00000ab4                xTaskCheckForTimeOut
 
 .text.vTaskMissedYield
-                0x00000b20        0xc
+                0x00000b24        0xc
  .text.vTaskMissedYield
-                0x00000b20        0xc ./Output/tasks.o
-                0x00000b20                vTaskMissedYield
+                0x00000b24        0xc ./Output/tasks.o
+                0x00000b24                vTaskMissedYield
 
 .text.xTaskGetSchedulerState
-                0x00000b2c       0x20
+                0x00000b30       0x20
  .text.xTaskGetSchedulerState
-                0x00000b2c       0x20 ./Output/tasks.o
-                0x00000b2c                xTaskGetSchedulerState
+                0x00000b30       0x20 ./Output/tasks.o
+                0x00000b30                xTaskGetSchedulerState
 
 .text.xTaskPriorityInherit
-                0x00000b4c       0xa0
+                0x00000b50       0xa0
  .text.xTaskPriorityInherit
-                0x00000b4c       0xa0 ./Output/tasks.o
-                0x00000b4c                xTaskPriorityInherit
+                0x00000b50       0xa0 ./Output/tasks.o
+                0x00000b50                xTaskPriorityInherit
 
 .text.xTaskPriorityDisinherit
-                0x00000bec       0x84
+                0x00000bf0       0x84
  .text.xTaskPriorityDisinherit
-                0x00000bec       0x84 ./Output/tasks.o
-                0x00000bec                xTaskPriorityDisinherit
+                0x00000bf0       0x84 ./Output/tasks.o
+                0x00000bf0                xTaskPriorityDisinherit
 
 .text.vTaskPriorityDisinheritAfterTimeout
-                0x00000c70       0x94
+                0x00000c74       0x94
  .text.vTaskPriorityDisinheritAfterTimeout
-                0x00000c70       0x94 ./Output/tasks.o
-                0x00000c70                vTaskPriorityDisinheritAfterTimeout
+                0x00000c74       0x94 ./Output/tasks.o
+                0x00000c74                vTaskPriorityDisinheritAfterTimeout
 
 .text.pvTaskIncrementMutexHeldCount
-                0x00000d04       0x14
+                0x00000d08       0x14
  .text.pvTaskIncrementMutexHeldCount
-                0x00000d04       0x14 ./Output/tasks.o
-                0x00000d04                pvTaskIncrementMutexHeldCount
+                0x00000d08       0x14 ./Output/tasks.o
+                0x00000d08                pvTaskIncrementMutexHeldCount
 
-.iplt           0x00000d18        0x0
- .iplt          0x00000d18        0x0 ./Output/tasks.o
+.iplt           0x00000d1c        0x0
+ .iplt          0x00000d1c        0x0 ./Output/tasks.o
 
 .text.vListInitialise
-                0x00000d18       0x16
+                0x00000d1c       0x16
  .text.vListInitialise
-                0x00000d18       0x16 ./Output/list.o
-                0x00000d18                vListInitialise
+                0x00000d1c       0x16 ./Output/list.o
+                0x00000d1c                vListInitialise
 
 .text.vListInitialiseItem
-                0x00000d2e        0x6
+                0x00000d32        0x6
  .text.vListInitialiseItem
-                0x00000d2e        0x6 ./Output/list.o
-                0x00000d2e                vListInitialiseItem
+                0x00000d32        0x6 ./Output/list.o
+                0x00000d32                vListInitialiseItem
 
 .text.vListInsert
-                0x00000d34       0x2e
+                0x00000d38       0x2e
  .text.vListInsert
-                0x00000d34       0x2e ./Output/list.o
-                0x00000d34                vListInsert
+                0x00000d38       0x2e ./Output/list.o
+                0x00000d38                vListInsert
 
 .text.uxListRemove
-                0x00000d62       0x1e
+                0x00000d66       0x1e
  .text.uxListRemove
-                0x00000d62       0x1e ./Output/list.o
-                0x00000d62                uxListRemove
+                0x00000d66       0x1e ./Output/list.o
+                0x00000d66                uxListRemove
 
 .text.prvIsQueueEmpty
-                0x00000d80       0x16
+                0x00000d84       0x16
  .text.prvIsQueueEmpty
-                0x00000d80       0x16 ./Output/queue.o
+                0x00000d84       0x16 ./Output/queue.o
 
 .text.prvCopyDataToQueue
-                0x00000d96       0x66
+                0x00000d9a       0x66
  .text.prvCopyDataToQueue
-                0x00000d96       0x66 ./Output/queue.o
+                0x00000d9a       0x66 ./Output/queue.o
 
 .text.prvNotifyQueueSetContainer
-                0x00000dfc       0x64
+                0x00000e00       0x64
  .text.prvNotifyQueueSetContainer
-                0x00000dfc       0x64 ./Output/queue.o
+                0x00000e00       0x64 ./Output/queue.o
 
 .text.prvUnlockQueue
-                0x00000e60       0x78
+                0x00000e64       0x78
  .text.prvUnlockQueue
-                0x00000e60       0x78 ./Output/queue.o
+                0x00000e64       0x78 ./Output/queue.o
 
 .text.xQueueGenericReset
-                0x00000ed8       0x7a
+                0x00000edc       0x7a
  .text.xQueueGenericReset
-                0x00000ed8       0x7a ./Output/queue.o
-                0x00000ed8                xQueueGenericReset
+                0x00000edc       0x7a ./Output/queue.o
+                0x00000edc                xQueueGenericReset
 
 .text.xQueueGenericCreate
-                0x00000f52       0x42
+                0x00000f56       0x42
  .text.xQueueGenericCreate
-                0x00000f52       0x42 ./Output/queue.o
-                0x00000f52                xQueueGenericCreate
+                0x00000f56       0x42 ./Output/queue.o
+                0x00000f56                xQueueGenericCreate
 
 .text.xQueueGenericSend
-                0x00000f94      0x138
+                0x00000f98      0x138
  .text.xQueueGenericSend
-                0x00000f94      0x138 ./Output/queue.o
-                0x00000f94                xQueueGenericSend
+                0x00000f98      0x138 ./Output/queue.o
+                0x00000f98                xQueueGenericSend
 
 .text.xQueueCreateMutex
-                0x000010cc       0x24
+                0x000010d0       0x24
  .text.xQueueCreateMutex
-                0x000010cc       0x24 ./Output/queue.o
-                0x000010cc                xQueueCreateMutex
+                0x000010d0       0x24 ./Output/queue.o
+                0x000010d0                xQueueCreateMutex
 
 .text.xQueueSemaphoreTake
-                0x000010f0      0x138
+                0x000010f4      0x138
  .text.xQueueSemaphoreTake
-                0x000010f0      0x138 ./Output/queue.o
-                0x000010f0                xQueueSemaphoreTake
+                0x000010f4      0x138 ./Output/queue.o
+                0x000010f4                xQueueSemaphoreTake
 
 .text.pvPortMalloc
-                0x00001228      0x130
+                0x0000122c      0x130
  .text.pvPortMalloc
-                0x00001228      0x130 ./Output/heap_4.o
-                0x00001228                pvPortMalloc
+                0x0000122c      0x130 ./Output/heap_4.o
+                0x0000122c                pvPortMalloc
 
 .text.vPortFree
-                0x00001358       0xbc
+                0x0000135c       0xbc
  .text.vPortFree
-                0x00001358       0xbc ./Output/heap_4.o
-                0x00001358                vPortFree
+                0x0000135c       0xbc ./Output/heap_4.o
+                0x0000135c                vPortFree
 
 .text.prvTaskExitError
-                0x00001414       0x30
+                0x00001418       0x34
  .text.prvTaskExitError
-                0x00001414       0x30 ./Output/port.o
+                0x00001418       0x34 ./Output/port.o
 
 .text.vPortSVCHandler
-                0x00001444       0x24
+                0x0000144c       0x24
  .text.vPortSVCHandler
-                0x00001444       0x24 ./Output/port.o
-                0x00001444                vPortSVCHandler
+                0x0000144c       0x24 ./Output/port.o
+                0x0000144c                vPortSVCHandler
 
 .text.prvPortStartFirstTask
-                0x00001468       0x20
+                0x00001470       0x20
  .text.prvPortStartFirstTask
-                0x00001468       0x20 ./Output/port.o
+                0x00001470       0x20 ./Output/port.o
 
 .text.xPortPendSVHandler
-                0x00001488       0x44
+                0x00001490       0x44
  .text.xPortPendSVHandler
-                0x00001488       0x44 ./Output/port.o
-                0x00001488                xPortPendSVHandler
+                0x00001490       0x44 ./Output/port.o
+                0x00001490                xPortPendSVHandler
 
 .text.pxPortInitialiseStack
-                0x000014cc       0x24
+                0x000014d4       0x24
  .text.pxPortInitialiseStack
-                0x000014cc       0x24 ./Output/port.o
-                0x000014cc                pxPortInitialiseStack
+                0x000014d4       0x24 ./Output/port.o
+                0x000014d4                pxPortInitialiseStack
 
 .text.vPortEnterCritical
-                0x000014f0       0x30
+                0x000014f8       0x34
  .text.vPortEnterCritical
-                0x000014f0       0x30 ./Output/port.o
-                0x000014f0                vPortEnterCritical
+                0x000014f8       0x34 ./Output/port.o
+                0x000014f8                vPortEnterCritical
 
 .text.vPortExitCritical
-                0x00001520       0x18
+                0x0000152c       0x18
  .text.vPortExitCritical
-                0x00001520       0x18 ./Output/port.o
-                0x00001520                vPortExitCritical
+                0x0000152c       0x18 ./Output/port.o
+                0x0000152c                vPortExitCritical
 
 .text.xPortSysTickHandler
-                0x00001538       0x2c
+                0x00001544       0x30
  .text.xPortSysTickHandler
-                0x00001538       0x2c ./Output/port.o
-                0x00001538                xPortSysTickHandler
+                0x00001544       0x30 ./Output/port.o
+                0x00001544                xPortSysTickHandler
 
 .text.vPortSetupTimerInterrupt
-                0x00001564       0x16
+                0x00001574       0x16
  .text.vPortSetupTimerInterrupt
-                0x00001564       0x16 ./Output/port.o
-                0x00001564                vPortSetupTimerInterrupt
+                0x00001574       0x16 ./Output/port.o
+                0x00001574                vPortSetupTimerInterrupt
 
 .text.xPortStartScheduler
-                0x0000157c       0xe4
+                0x0000158c       0xe4
  .text.xPortStartScheduler
-                0x0000157c       0xe4 ./Output/port.o
-                0x0000157c                xPortStartScheduler
+                0x0000158c       0xe4 ./Output/port.o
+                0x0000158c                xPortStartScheduler
 
 .text.EmergencyVehicle
-                0x00001660        0x2
+                0x00001670        0x2
  .text.EmergencyVehicle
-                0x00001660        0x2 ./Output/main_nuovo.o
-                0x00001660                EmergencyVehicle
+                0x00001670        0x2 ./Output/main_nuovo.o
+                0x00001670                EmergencyVehicle
 
 .text.CentralMonitoring
-                0x00001662        0x2
+                0x00001672        0x2
  .text.CentralMonitoring
-                0x00001662        0x2 ./Output/main_nuovo.o
-                0x00001662                CentralMonitoring
+                0x00001672        0x2 ./Output/main_nuovo.o
+                0x00001672                CentralMonitoring
 
 .text.TrafficLight
-                0x00001664       0x48
+                0x00001674       0x48
  .text.TrafficLight
-                0x00001664       0x48 ./Output/main_nuovo.o
-                0x00001664                TrafficLight
+                0x00001674       0x48 ./Output/main_nuovo.o
+                0x00001674                TrafficLight
 
 .text.PedestrianCrossing
-                0x000016ac       0x58
+                0x000016bc       0x58
  .text.PedestrianCrossing
-                0x000016ac       0x58 ./Output/main_nuovo.o
-                0x000016ac                PedestrianCrossing
+                0x000016bc       0x58 ./Output/main_nuovo.o
+                0x000016bc                PedestrianCrossing
 
 .text.startup.main
-                0x00001704       0x98
+                0x00001714       0xa4
  .text.startup.main
-                0x00001704       0x98 ./Output/main_nuovo.o
-                0x00001704                main
+                0x00001714       0xa4 ./Output/main_nuovo.o
+                0x00001714                main
 
 .text.UART_init
-                0x0000179c        0xe
+                0x000017b8        0xe
  .text.UART_init
-                0x0000179c        0xe ./Output/uart.o
-                0x0000179c                UART_init
+                0x000017b8        0xe ./Output/uart.o
+                0x000017b8                UART_init
 
 .text.UART_print_int
-                0x000017aa       0x5c
+                0x000017c6       0x5c
  .text.UART_print_int
-                0x000017aa       0x5c ./Output/uart.o
-                0x000017aa                UART_print_int
+                0x000017c6       0x5c ./Output/uart.o
+                0x000017c6                UART_print_int
 
 .text.UART_printf
-                0x00001806       0x3e
+                0x00001822       0x3e
  .text.UART_printf
-                0x00001806       0x3e ./Output/uart.o
-                0x00001806                UART_printf
+                0x00001822       0x3e ./Output/uart.o
+                0x00001822                UART_printf
 
 .text.Default_Handler
                 0x00001900        0xc
@@ -1262,17 +1262,17 @@ END GROUP
 OUTPUT(./Output/demo.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x00000000     0x6a84
+.debug_info     0x00000000     0x6aa4
  .debug_info    0x00000000     0x305c ./Output/tasks.o
  .debug_info    0x0000305c      0x2b2 ./Output/list.o
  .debug_info    0x0000330e     0x2278 ./Output/queue.o
  .debug_info    0x00005586      0x5d7 ./Output/heap_4.o
  .debug_info    0x00005b5d      0x465 ./Output/port.o
- .debug_info    0x00005fc2      0x5a5 ./Output/main_nuovo.o
- .debug_info    0x00006567      0x1b9 ./Output/uart.o
- .debug_info    0x00006720      0x1fc ./Output/startup.o
- .debug_info    0x0000691c      0x135 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
- .debug_info    0x00006a51       0x33 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+ .debug_info    0x00005fc2      0x5c5 ./Output/main_nuovo.o
+ .debug_info    0x00006587      0x1b9 ./Output/uart.o
+ .debug_info    0x00006740      0x1fc ./Output/startup.o
+ .debug_info    0x0000693c      0x135 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .debug_info    0x00006a71       0x33 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
 
 .debug_abbrev   0x00000000     0x14d8
  .debug_abbrev  0x00000000      0x4ff ./Output/tasks.o
@@ -1330,23 +1330,23 @@ LOAD linker stubs
                 0x00000508       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
 
 .debug_rnglists
-                0x00000000      0x61c
+                0x00000000      0x61d
  .debug_rnglists
-                0x00000000      0x303 ./Output/tasks.o
+                0x00000000      0x304 ./Output/tasks.o
  .debug_rnglists
-                0x00000303       0x2b ./Output/list.o
+                0x00000304       0x2b ./Output/list.o
  .debug_rnglists
-                0x0000032e      0x1c4 ./Output/queue.o
+                0x0000032f      0x1c4 ./Output/queue.o
  .debug_rnglists
-                0x000004f2       0x4c ./Output/heap_4.o
+                0x000004f3       0x4c ./Output/heap_4.o
  .debug_rnglists
-                0x0000053e       0x6e ./Output/port.o
+                0x0000053f       0x6e ./Output/port.o
  .debug_rnglists
-                0x000005ac       0x2c ./Output/main_nuovo.o
+                0x000005ad       0x2c ./Output/main_nuovo.o
  .debug_rnglists
-                0x000005d8       0x1f ./Output/uart.o
+                0x000005d9       0x1f ./Output/uart.o
  .debug_rnglists
-                0x000005f7       0x25 ./Output/startup.o
+                0x000005f8       0x25 ./Output/startup.o
 
 .debug_macro    0x00000000     0x40f8
  .debug_macro   0x00000000      0x289 ./Output/tasks.o
@@ -1404,17 +1404,17 @@ LOAD linker stubs
  .debug_macro   0x00003fba       0x9f ./Output/uart.o
  .debug_macro   0x00004059       0x9f ./Output/startup.o
 
-.debug_line     0x00000000     0x613d
- .debug_line    0x00000000     0x2a1f ./Output/tasks.o
- .debug_line    0x00002a1f      0x457 ./Output/list.o
- .debug_line    0x00002e76     0x1a98 ./Output/queue.o
- .debug_line    0x0000490e      0x830 ./Output/heap_4.o
- .debug_line    0x0000513e      0x531 ./Output/port.o
- .debug_line    0x0000566f      0x3ae ./Output/main_nuovo.o
- .debug_line    0x00005a1d      0x29b ./Output/uart.o
- .debug_line    0x00005cb8      0x217 ./Output/startup.o
- .debug_line    0x00005ecf      0x1b1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
- .debug_line    0x00006080       0xbd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+.debug_line     0x00000000     0x6241
+ .debug_line    0x00000000     0x2a39 ./Output/tasks.o
+ .debug_line    0x00002a39      0x471 ./Output/list.o
+ .debug_line    0x00002eaa     0x1ab2 ./Output/queue.o
+ .debug_line    0x0000495c      0x84a ./Output/heap_4.o
+ .debug_line    0x000051a6      0x582 ./Output/port.o
+ .debug_line    0x00005728      0x3c5 ./Output/main_nuovo.o
+ .debug_line    0x00005aed      0x2b5 ./Output/uart.o
+ .debug_line    0x00005da2      0x231 ./Output/startup.o
+ .debug_line    0x00005fd3      0x1b1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .debug_line    0x00006184       0xbd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
 
 .debug_str      0x00000000    0x1694a
  .debug_str     0x00000000    0x1694a ./Output/tasks.o

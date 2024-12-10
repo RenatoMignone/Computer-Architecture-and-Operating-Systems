@@ -20,9 +20,6 @@ typedef struct{
 //////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////
 bool traffic_light_street = false;
-
-
-
 //////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////
 void TrafficLight(void *pvParameters);
@@ -49,6 +46,7 @@ int main(int argc, char **argv){
 
     xDataQueue = xQueueCreate(QUEUE_LEN,sizeof(Data));
     xMutex = xSemaphoreCreateMutex();
+    xSemaphoreGive(xMutex);
 
     xTaskCreate(TrafficLight, "TrafficLight", 1000, NULL, mainTASK_PRIORITY+1, NULL);
     xTaskCreate(PedestrianCrossing, "PedestrianCrossing", 1000, NULL, mainTASK_PRIORITY+1, NULL);

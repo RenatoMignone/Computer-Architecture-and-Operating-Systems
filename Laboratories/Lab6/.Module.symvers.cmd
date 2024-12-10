@@ -1,0 +1,1 @@
+savedcmd_/home/ren/CyberSecurity/CAOS/Laboratories/Lab6/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/ren/CyberSecurity/CAOS/Laboratories/Lab6/Module.symvers -T /home/ren/CyberSecurity/CAOS/Laboratories/Lab6/modules.order -i Module.symvers -e 

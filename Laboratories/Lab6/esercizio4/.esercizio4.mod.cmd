@@ -1,0 +1,1 @@
+savedcmd_/home/ren/CyberSecurity/CAOS/Laboratories/Lab6/esercizio4/esercizio4.mod := printf '%s\n'   init.o exit.o string_rev.o | awk '!x[$$0]++ { print("/home/ren/CyberSecurity/CAOS/Laboratories/Lab6/esercizio4/"$$0) }' > /home/ren/CyberSecurity/CAOS/Laboratories/Lab6/esercizio4/esercizio4.mod
