@@ -1,0 +1,70 @@
+1. Hardware Interrupts
+
+- Critical component in embedded systems
+- Allow asynchronous event handling
+- Notify CPU to take specific actions
+- Interrupt Service Routine (ISR) executes when interrupt occurs
+
+- fully hw
+- they depends on the board
+- used with pheripherals to make them cummunicate with hw
+- interrupts must be very short
+- hw timers uses interrupts
+
+---------------------------------------------------------------------------
+
+2. FreeRTOS and Hardware Interrupts
+
+- Higher priority (by default) than tasks
+- Cannot be blocked
+- Must use *FromISR function calls
+
+- interrupt -> jump immediately to execute a specific function
+
+# Best Practices for ISRs
+
+1. Never block the ISR
+2. Keep ISRs as short as possible
+3. Use volatile qualifier for variables updated in ISR (to avoid compiler optimization)
+4. Implement deferred interrupt processing
+
+# Deferred Interrupts
+
+- Synchronize task to ISR using semaphores
+- ISR captures data and gives semaphore
+- Waiting task processes data immediately after ISR completes
+
+Task B is blocked waiting for a semaphore. Only the ISR gives the semaphore. So, as soon as
+the ISR runs (and, say, collects some data from a sensor), it gives the semaphore. When the
+ISR has finished executing, Task B is immediately unblocked and runs to process the newly
+collected data.
+
+- ISR not a context switch, it only calls a function
+- we create an additional task
+
+---------------------------------------------------------------------------
+
+4. Common Microcontroller Software Interface Standard (CMSIS)
+
+writing very low level -> the implementation is not portable
+-> introducing an intermediate level (CMSIS)
+
+simple a middle layer library (set of functions)
+so we can program without knowing the board/device (generally the hardware)
+
+- Enables consistent device support
+- Simplifies software interfaces
+- Reduces learning curve for microcontroller developers
+- Accelerates time-to-market for new devices
+
+---------------------------------------------------------------------------
+
+5. Interrupt Handling
+
+# Interrupt Vector Table
+
+- Not defined by FreeRTOS (we have to define in a FreeRTOS project -> isr_vector[])
+- Typically part of:
+    - Compiler toolchain startup code (startup.c or startup_gcc.c)
+    - Device-specific libraries (CMSIS)
+- Usually implemented in assembly or C

@@ -1,0 +1,195 @@
+1. What is a File System
+
+A file system is a method to organize, store, retrieve, and manage data on storage devices.
+
+# Key Responsibilities
+
+- **Storage Management**:
+    - Allocate and track space on storage mediums
+    - Efficiently manage available storage resources
+- **File Naming and Metadata**:
+    - Handle file names
+    - Store associated metadata
+- **Data Organization**:
+    - Arrange files using logical structures
+    - Use directories and subdirectories
+    - Create hierarchical file storage systems
+- **Access Control**:
+    - Manage file permissions
+    - Control reading, writing, and executing capabilities
+    - Implement user and group-based access restrictions
+
+---------------------------------------------------------------------------
+
+2. Disk Layout for File Systems
+
+# Components
+
+	1. **Boot Block**:
+	    - Indicates installed operating system
+	    - Read by bootloader to find OS image
+	2. **Super Block**:
+	    - Defines file system characteristics:
+	        - File system size
+	        - File descriptor area size
+	        - Free block list start
+	        - Root directory FCB location
+	        - Metadata (permissions, timestamps)
+	3. **File Control Block (FCB)**:
+	    - Contains file attributes and block locations
+	        - Permissions
+	        - Creation/access/write dates
+	        - Owner and group information
+	        - Access Control List (ACL)
+	        - File size
+	        - File contents location
+	4. **File data blocks**
+
+# FCB Implementations
+
+	- **UNIX File System**: I-node
+	- **FAT/FAT32**: Part of File Allocation Table
+	- **NTFS**: Part of Master File Table
+
+---------------------------------------------------------------------------
+
+3. Block Allocation Methods
+
+- **Contiguous Allocation**:
+    - Files stored in consecutive disk blocks
+    - Pros:
+        - Efficient read/seek
+        - Good spatial locality
+    - Cons:
+        - Difficult to predict block requirements
+        - Prone to disk fragmentation
+
+- **Linked Block Allocation**:
+    - Files can be stored in non-contiguous blocks
+    - Each block points to the next block
+    - Pros:
+        - Less fragmentation
+        - Flexible file allocation
+    - Cons:
+        - Inefficient sequential and random reads
+        - Seek time increases with file size
+
+    TYPE OF LINKED:
+	- **File Allocation Table (FAT)**:
+	    - Table at volume beginning
+	    - Indexed by block number
+	    - Pros:
+	        - Simple block allocation
+	        - Easy implementation
+	    - Cons:
+	        - Sensitive to power loss
+	        - Risk of data loss during updates
+
+- **Indexed Block Allocation**:
+    - Non-contiguous block storage
+    - FCB maintains block pointers array
+    - Enables easy random and sequential access
+
+    TYPE OF INDEXED:
+    - **Unix File System (UFS)**:
+        - FCB = i-node (index node)
+        - max depth of hierarchy = 4
+        - hierarchical approach
+
+---------------------------------------------------------------------------
+
+4. Free Space Management
+
+keep track of empty/free blocks
+
+- Bit Vector (or BitMap)
+	- vector_size = n_blocks
+	- could be very efficient
+	- bitmap size grows as disk size grows
+
+- Linked List
+	- no need to keep global table
+	- sequential approach (no direct indexing)
+
+---------------------------------------------------------------------------
+
+5. Flash Memory
+
+- NOR: can execute programs in place (so in emb sys we can put os into it)
+	- faster
+	- more expensive
+	- smaller
+- NAND: it needs the loader to execute programs
+	- slower
+	- cheaper
+	- can be bigger
+
+- non-valatile
+- solid state
+- fast
+
+implemented with transistor and semiconductors
+very expensive to overwrite, so, instead of do this, we rewrite in the next free location
+
+---------------------------------------------------------------------------
+
+6. Log-Structured File System
+
+we use i-nodes to tracks blocks
+rewriting blocks, we have also to rewrite the i-nodes
+
+to keep track of the i-nodes, we use a i-node map (imap) and we put it at the end
+so at the beginning we start reading from the end to read the imap
+
+to free up some space and remove old blocks that have been rewritten, we perform the garbage collection (starting from the imap)
+it's a very expensive operations, so we try to perform it not so often
+
+---------------------------------------------------------------------------
+
+7. Embedded File Systems
+
+- LittleFS
+
+- Yaffs (Yet Another Flash File System) (open-source)
+
+---------------------------------------------------------------------------
+
+8. Journaling
+
+solution to avoid data loss/corrumption with power failures
+
+- journal keeps track of the changes before applying it (before committing them to the file system)
+
+---------------------------------------------------------------------------
+
+9. LogFS
+
+example of journaling
+
+- designedd for raw flash devices (NAND, NOR)
+
+- File system design based on a tree
+- Update is done out-of-place
+	- The new value of updated data is stored separately from the old value
+- The root node is locatable in O(1) time
+	- Anchor node is used
+
+Anchor node:
+- Anchor node is used to find a tree’s root node in flash
+- A Flash block stores a list of (version, offset) tuples
+- The highest version is the current root note of the flash
+	- When file system is mounted the anchor node is scanned looking for the root node
+- A write operation is completed by updating the anchor node
+
+# Wandering trees
+
+	1. A new node g’ is created
+	2. A new parent e’ is created point to g’ and f
+	3. The process is repeated until a new root a’ is created
+	4. Write is finalized updating anchor node
+
+- If any failure takes place before updating anchor node, changes are discarded
+- If any failure takes place during anchor node update, changes are discarded
+	- Anchor node is duplicated for redundancy
+- If failure takes place after updating anchor node, at the next system boot the file system is
+consistent

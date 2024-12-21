@@ -1,0 +1,1730 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen-stub.o)
+                              ./Output/tasks.o (strlen)
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+                              ./Output/tasks.o (memset)
+/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+                              ./Output/queue.o (memcpy)
+
+Discarded input sections
+
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/tasks.o
+ .text          0x00000000        0x0 ./Output/tasks.o
+ .data          0x00000000        0x0 ./Output/tasks.o
+ .bss           0x00000000        0x0 ./Output/tasks.o
+ .text.prvSearchForNameWithinSingleList
+                0x00000000       0x3e ./Output/tasks.o
+ .text.prvTaskIsTaskSuspended
+                0x00000000       0x40 ./Output/tasks.o
+ .text.vTaskDelete
+                0x00000000       0xd0 ./Output/tasks.o
+ .text.eTaskGetState
+                0x00000000       0x98 ./Output/tasks.o
+ .text.uxTaskPriorityGet
+                0x00000000       0x1c ./Output/tasks.o
+ .text.uxTaskPriorityGetFromISR
+                0x00000000       0x34 ./Output/tasks.o
+ .text.uxTaskBasePriorityGet
+                0x00000000       0x1c ./Output/tasks.o
+ .text.uxTaskBasePriorityGetFromISR
+                0x00000000       0x34 ./Output/tasks.o
+ .text.vTaskPrioritySet
+                0x00000000       0xdc ./Output/tasks.o
+ .text.vTaskResume
+                0x00000000       0x88 ./Output/tasks.o
+ .text.xTaskResumeFromISR
+                0x00000000       0xac ./Output/tasks.o
+ .text.vTaskEndScheduler
+                0x00000000       0x40 ./Output/tasks.o
+ .text.xTaskGetTickCountFromISR
+                0x00000000       0x10 ./Output/tasks.o
+ .text.pcTaskGetName
+                0x00000000       0x14 ./Output/tasks.o
+ .text.xTaskGetIdleTaskHandle
+                0x00000000       0x10 ./Output/tasks.o
+ .text.xTaskGetIdleTaskHandleForCore
+                0x00000000       0x14 ./Output/tasks.o
+ .text.xTaskDelayUntil
+                0x00000000       0x6c ./Output/tasks.o
+ .text.xTaskGetHandle
+                0x00000000       0x78 ./Output/tasks.o
+ .text.xTaskCatchUpTicks
+                0x00000000       0x30 ./Output/tasks.o
+ .text.xTaskAbortDelay
+                0x00000000       0x98 ./Output/tasks.o
+ .text.vTaskSuspend
+                0x00000000       0xe4 ./Output/tasks.o
+ .text.vTaskPlaceOnUnorderedEventList
+                0x00000000       0x50 ./Output/tasks.o
+ .text.vTaskRemoveFromUnorderedEventList
+                0x00000000       0xa4 ./Output/tasks.o
+ .text.vTaskSetTimeOutState
+                0x00000000       0x28 ./Output/tasks.o
+ .text.uxTaskGetStackHighWaterMark
+                0x00000000       0x1c ./Output/tasks.o
+ .text.xTaskGetCurrentTaskHandle
+                0x00000000        0xc ./Output/tasks.o
+ .text.xTaskGetCurrentTaskHandleForCore
+                0x00000000       0x10 ./Output/tasks.o
+ .text.uxTaskResetEventItemValue
+                0x00000000       0x18 ./Output/tasks.o
+ .text.ulTaskGenericNotifyTake
+                0x00000000       0x9c ./Output/tasks.o
+ .text.xTaskGenericNotifyWait
+                0x00000000       0xc4 ./Output/tasks.o
+ .text.xTaskGenericNotify
+                0x00000000      0x104 ./Output/tasks.o
+ .text.xTaskGenericNotifyFromISR
+                0x00000000      0x14c ./Output/tasks.o
+ .text.vTaskGenericNotifyGiveFromISR
+                0x00000000       0xf8 ./Output/tasks.o
+ .text.xTaskGenericNotifyStateClear
+                0x00000000       0x38 ./Output/tasks.o
+ .text.ulTaskGenericNotifyValueClear
+                0x00000000       0x34 ./Output/tasks.o
+ .text.vTaskResetState
+                0x00000000       0x64 ./Output/tasks.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .group         0x00000000        0xc ./Output/list.o
+ .text          0x00000000        0x0 ./Output/list.o
+ .data          0x00000000        0x0 ./Output/list.o
+ .bss           0x00000000        0x0 ./Output/list.o
+ .text.vListInsertEnd
+                0x00000000       0x16 ./Output/list.o
+ .debug_macro   0x00000000      0xac0 ./Output/list.o
+ .debug_macro   0x00000000       0x24 ./Output/list.o
+ .debug_macro   0x00000000       0x22 ./Output/list.o
+ .debug_macro   0x00000000       0x60 ./Output/list.o
+ .debug_macro   0x00000000       0x94 ./Output/list.o
+ .debug_macro   0x00000000       0x3c ./Output/list.o
+ .debug_macro   0x00000000       0x34 ./Output/list.o
+ .debug_macro   0x00000000       0x16 ./Output/list.o
+ .debug_macro   0x00000000      0x11c ./Output/list.o
+ .debug_macro   0x00000000       0x9b ./Output/list.o
+ .debug_macro   0x00000000       0x57 ./Output/list.o
+ .debug_macro   0x00000000      0x370 ./Output/list.o
+ .debug_macro   0x00000000       0x16 ./Output/list.o
+ .debug_macro   0x00000000       0x4a ./Output/list.o
+ .debug_macro   0x00000000       0x34 ./Output/list.o
+ .debug_macro   0x00000000       0x10 ./Output/list.o
+ .debug_macro   0x00000000       0x52 ./Output/list.o
+ .debug_macro   0x00000000      0x1de ./Output/list.o
+ .debug_macro   0x00000000       0x16 ./Output/list.o
+ .debug_macro   0x00000000       0x29 ./Output/list.o
+ .debug_macro   0x00000000      0x34e ./Output/list.o
+ .debug_macro   0x00000000       0x16 ./Output/list.o
+ .debug_macro   0x00000000      0x164 ./Output/list.o
+ .debug_macro   0x00000000       0x1c ./Output/list.o
+ .debug_macro   0x00000000      0x182 ./Output/list.o
+ .debug_macro   0x00000000       0xe7 ./Output/list.o
+ .debug_macro   0x00000000       0x3a ./Output/list.o
+ .debug_macro   0x00000000       0x1f ./Output/list.o
+ .debug_macro   0x00000000       0x12 ./Output/list.o
+ .debug_macro   0x00000000      0xfde ./Output/list.o
+ .debug_macro   0x00000000       0xc3 ./Output/list.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .group         0x00000000        0xc ./Output/timers.o
+ .text          0x00000000        0x0 ./Output/timers.o
+ .data          0x00000000        0x0 ./Output/timers.o
+ .bss           0x00000000        0x0 ./Output/timers.o
+ .text.xTimerGenericCommandFromISR
+                0x00000000       0x30 ./Output/timers.o
+ .text.xTimerGetTimerDaemonTaskHandle
+                0x00000000       0x10 ./Output/timers.o
+ .text.xTimerGetPeriod
+                0x00000000        0x8 ./Output/timers.o
+ .text.vTimerSetReloadMode
+                0x00000000       0x2a ./Output/timers.o
+ .text.xTimerGetReloadMode
+                0x00000000       0x1c ./Output/timers.o
+ .text.uxTimerGetReloadMode
+                0x00000000        0x4 ./Output/timers.o
+ .text.xTimerGetExpiryTime
+                0x00000000        0x8 ./Output/timers.o
+ .text.pcTimerGetName
+                0x00000000        0x8 ./Output/timers.o
+ .text.xTimerIsTimerActive
+                0x00000000       0x1c ./Output/timers.o
+ .text.pvTimerGetTimerID
+                0x00000000       0x16 ./Output/timers.o
+ .text.vTimerSetTimerID
+                0x00000000       0x18 ./Output/timers.o
+ .text.xTimerPendFunctionCallFromISR
+                0x00000000       0x28 ./Output/timers.o
+ .text.xTimerPendFunctionCall
+                0x00000000       0x30 ./Output/timers.o
+ .text.vTimerResetState
+                0x00000000       0x14 ./Output/timers.o
+ .debug_macro   0x00000000      0xac0 ./Output/timers.o
+ .debug_macro   0x00000000       0x24 ./Output/timers.o
+ .debug_macro   0x00000000       0x22 ./Output/timers.o
+ .debug_macro   0x00000000       0x60 ./Output/timers.o
+ .debug_macro   0x00000000       0x94 ./Output/timers.o
+ .debug_macro   0x00000000       0x3c ./Output/timers.o
+ .debug_macro   0x00000000       0x34 ./Output/timers.o
+ .debug_macro   0x00000000       0x16 ./Output/timers.o
+ .debug_macro   0x00000000      0x11c ./Output/timers.o
+ .debug_macro   0x00000000       0x9b ./Output/timers.o
+ .debug_macro   0x00000000       0x57 ./Output/timers.o
+ .debug_macro   0x00000000      0x370 ./Output/timers.o
+ .debug_macro   0x00000000       0x16 ./Output/timers.o
+ .debug_macro   0x00000000       0x4a ./Output/timers.o
+ .debug_macro   0x00000000       0x34 ./Output/timers.o
+ .debug_macro   0x00000000       0x10 ./Output/timers.o
+ .debug_macro   0x00000000       0x52 ./Output/timers.o
+ .debug_macro   0x00000000      0x1de ./Output/timers.o
+ .debug_macro   0x00000000       0x16 ./Output/timers.o
+ .debug_macro   0x00000000       0x29 ./Output/timers.o
+ .debug_macro   0x00000000      0x34e ./Output/timers.o
+ .debug_macro   0x00000000       0x16 ./Output/timers.o
+ .debug_macro   0x00000000      0x164 ./Output/timers.o
+ .debug_macro   0x00000000       0x1c ./Output/timers.o
+ .debug_macro   0x00000000      0x182 ./Output/timers.o
+ .debug_macro   0x00000000       0xe7 ./Output/timers.o
+ .debug_macro   0x00000000       0x3a ./Output/timers.o
+ .debug_macro   0x00000000       0x1f ./Output/timers.o
+ .debug_macro   0x00000000       0x12 ./Output/timers.o
+ .debug_macro   0x00000000      0xfde ./Output/timers.o
+ .debug_macro   0x00000000       0xc3 ./Output/timers.o
+ .debug_macro   0x00000000      0x14f ./Output/timers.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .group         0x00000000        0xc ./Output/queue.o
+ .text          0x00000000        0x0 ./Output/queue.o
+ .data          0x00000000        0x0 ./Output/queue.o
+ .bss           0x00000000        0x0 ./Output/queue.o
+ .text.xQueueGetMutexHolder
+                0x00000000       0x1e ./Output/queue.o
+ .text.xQueueGetMutexHolderFromISR
+                0x00000000       0x10 ./Output/queue.o
+ .text.xQueueCreateCountingSemaphore
+                0x00000000       0x1a ./Output/queue.o
+ .text.xQueueCreateMutex
+                0x00000000       0x24 ./Output/queue.o
+ .text.xQueueGiveMutexRecursive
+                0x00000000       0x2e ./Output/queue.o
+ .text.xQueueGenericSendFromISR
+                0x00000000       0xb6 ./Output/queue.o
+ .text.xQueueGiveFromISR
+                0x00000000       0x96 ./Output/queue.o
+ .text.xQueueTakeMutexRecursive
+                0x00000000       0x32 ./Output/queue.o
+ .text.xQueuePeek
+                0x00000000      0x108 ./Output/queue.o
+ .text.xQueueReceiveFromISR
+                0x00000000       0x8c ./Output/queue.o
+ .text.xQueuePeekFromISR
+                0x00000000       0x48 ./Output/queue.o
+ .text.uxQueueMessagesWaiting
+                0x00000000       0x16 ./Output/queue.o
+ .text.uxQueueSpacesAvailable
+                0x00000000       0x1a ./Output/queue.o
+ .text.uxQueueMessagesWaitingFromISR
+                0x00000000        0x8 ./Output/queue.o
+ .text.uxQueueGetQueueItemSize
+                0x00000000        0x4 ./Output/queue.o
+ .text.uxQueueGetQueueLength
+                0x00000000        0x4 ./Output/queue.o
+ .text.xQueueIsQueueEmptyFromISR
+                0x00000000        0xe ./Output/queue.o
+ .text.xQueueIsQueueFullFromISR
+                0x00000000       0x10 ./Output/queue.o
+ .text.pcQueueGetName
+                0x00000000       0x2c ./Output/queue.o
+ .text.vQueueUnregisterQueue
+                0x00000000       0x34 ./Output/queue.o
+ .text.vQueueDelete
+                0x00000000       0x12 ./Output/queue.o
+ .text.xQueueCreateSet
+                0x00000000        0x8 ./Output/queue.o
+ .text.xQueueAddToSet
+                0x00000000       0x22 ./Output/queue.o
+ .text.xQueueRemoveFromSet
+                0x00000000       0x20 ./Output/queue.o
+ .text.xQueueSelectFromSet
+                0x00000000       0x16 ./Output/queue.o
+ .text.xQueueSelectFromSetFromISR
+                0x00000000       0x14 ./Output/queue.o
+ .debug_macro   0x00000000      0xac0 ./Output/queue.o
+ .debug_macro   0x00000000       0x24 ./Output/queue.o
+ .debug_macro   0x00000000       0x22 ./Output/queue.o
+ .debug_macro   0x00000000       0x60 ./Output/queue.o
+ .debug_macro   0x00000000       0x94 ./Output/queue.o
+ .debug_macro   0x00000000       0x3c ./Output/queue.o
+ .debug_macro   0x00000000       0x34 ./Output/queue.o
+ .debug_macro   0x00000000       0x16 ./Output/queue.o
+ .debug_macro   0x00000000      0x11c ./Output/queue.o
+ .debug_macro   0x00000000       0x9b ./Output/queue.o
+ .debug_macro   0x00000000       0x57 ./Output/queue.o
+ .debug_macro   0x00000000      0x370 ./Output/queue.o
+ .debug_macro   0x00000000       0x16 ./Output/queue.o
+ .debug_macro   0x00000000       0x4a ./Output/queue.o
+ .debug_macro   0x00000000       0x34 ./Output/queue.o
+ .debug_macro   0x00000000       0x10 ./Output/queue.o
+ .debug_macro   0x00000000       0x52 ./Output/queue.o
+ .debug_macro   0x00000000      0x1de ./Output/queue.o
+ .debug_macro   0x00000000       0x16 ./Output/queue.o
+ .debug_macro   0x00000000       0x29 ./Output/queue.o
+ .debug_macro   0x00000000       0x16 ./Output/queue.o
+ .debug_macro   0x00000000       0x3c ./Output/queue.o
+ .debug_macro   0x00000000      0x34e ./Output/queue.o
+ .debug_macro   0x00000000       0x16 ./Output/queue.o
+ .debug_macro   0x00000000      0x164 ./Output/queue.o
+ .debug_macro   0x00000000       0x1c ./Output/queue.o
+ .debug_macro   0x00000000      0x182 ./Output/queue.o
+ .debug_macro   0x00000000       0xe7 ./Output/queue.o
+ .debug_macro   0x00000000       0x3a ./Output/queue.o
+ .debug_macro   0x00000000       0x1f ./Output/queue.o
+ .debug_macro   0x00000000       0x12 ./Output/queue.o
+ .debug_macro   0x00000000      0xfde ./Output/queue.o
+ .debug_macro   0x00000000       0xc3 ./Output/queue.o
+ .debug_macro   0x00000000      0x14f ./Output/queue.o
+ .debug_macro   0x00000000       0x80 ./Output/queue.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/heap_4.o
+ .text          0x00000000        0x0 ./Output/heap_4.o
+ .data          0x00000000        0x0 ./Output/heap_4.o
+ .bss           0x00000000        0x0 ./Output/heap_4.o
+ .text.xPortGetFreeHeapSize
+                0x00000000        0xc ./Output/heap_4.o
+ .text.xPortGetMinimumEverFreeHeapSize
+                0x00000000        0xc ./Output/heap_4.o
+ .text.vPortInitialiseBlocks
+                0x00000000        0x2 ./Output/heap_4.o
+ .text.pvPortCalloc
+                0x00000000       0x2a ./Output/heap_4.o
+ .text.vPortGetHeapStats
+                0x00000000       0x84 ./Output/heap_4.o
+ .text.vPortHeapResetState
+                0x00000000       0x2c ./Output/heap_4.o
+ .debug_macro   0x00000000      0xac0 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x24 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x22 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x60 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x94 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x3c ./Output/heap_4.o
+ .debug_macro   0x00000000       0x34 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x16 ./Output/heap_4.o
+ .debug_macro   0x00000000      0x11c ./Output/heap_4.o
+ .debug_macro   0x00000000       0x9b ./Output/heap_4.o
+ .debug_macro   0x00000000       0x57 ./Output/heap_4.o
+ .debug_macro   0x00000000      0x370 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x16 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x4a ./Output/heap_4.o
+ .debug_macro   0x00000000       0x34 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x10 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x52 ./Output/heap_4.o
+ .debug_macro   0x00000000      0x1de ./Output/heap_4.o
+ .debug_macro   0x00000000       0x16 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x29 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x16 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x3c ./Output/heap_4.o
+ .debug_macro   0x00000000      0x34e ./Output/heap_4.o
+ .debug_macro   0x00000000       0x16 ./Output/heap_4.o
+ .debug_macro   0x00000000      0x164 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x1c ./Output/heap_4.o
+ .debug_macro   0x00000000      0x182 ./Output/heap_4.o
+ .debug_macro   0x00000000       0xe7 ./Output/heap_4.o
+ .debug_macro   0x00000000       0x3a ./Output/heap_4.o
+ .debug_macro   0x00000000       0x1f ./Output/heap_4.o
+ .debug_macro   0x00000000       0x12 ./Output/heap_4.o
+ .debug_macro   0x00000000      0xfde ./Output/heap_4.o
+ .debug_macro   0x00000000       0xc3 ./Output/heap_4.o
+ .debug_macro   0x00000000      0x14f ./Output/heap_4.o
+ .group         0x00000000        0xc ./Output/port.o
+ .group         0x00000000        0xc ./Output/port.o
+ .group         0x00000000        0xc ./Output/port.o
+ .group         0x00000000        0xc ./Output/port.o
+ .group         0x00000000        0xc ./Output/port.o
+ .group         0x00000000        0xc ./Output/port.o
+ .group         0x00000000        0xc ./Output/port.o
+ .group         0x00000000        0xc ./Output/port.o
+ .group         0x00000000        0xc ./Output/port.o
+ .group         0x00000000        0xc ./Output/port.o
+ .group         0x00000000        0xc ./Output/port.o
+ .group         0x00000000        0xc ./Output/port.o
+ .group         0x00000000        0xc ./Output/port.o
+ .group         0x00000000        0xc ./Output/port.o
+ .text          0x00000000        0x0 ./Output/port.o
+ .data          0x00000000        0x0 ./Output/port.o
+ .bss           0x00000000        0x0 ./Output/port.o
+ .text.vPortEndScheduler
+                0x00000000       0x14 ./Output/port.o
+ .text.vPortValidateInterruptPriority
+                0x00000000       0x3c ./Output/port.o
+ .debug_macro   0x00000000      0xac0 ./Output/port.o
+ .debug_macro   0x00000000      0x34e ./Output/port.o
+ .debug_macro   0x00000000       0x16 ./Output/port.o
+ .debug_macro   0x00000000      0x164 ./Output/port.o
+ .debug_macro   0x00000000       0x1c ./Output/port.o
+ .debug_macro   0x00000000      0x182 ./Output/port.o
+ .debug_macro   0x00000000       0xe7 ./Output/port.o
+ .debug_macro   0x00000000       0x3a ./Output/port.o
+ .debug_macro   0x00000000       0x1f ./Output/port.o
+ .debug_macro   0x00000000       0x12 ./Output/port.o
+ .debug_macro   0x00000000      0xfde ./Output/port.o
+ .debug_macro   0x00000000       0xc3 ./Output/port.o
+ .debug_macro   0x00000000      0x14f ./Output/port.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/main_simone.o
+ .text          0x00000000        0x0 ./Output/main_simone.o
+ .data          0x00000000        0x0 ./Output/main_simone.o
+ .bss           0x00000000        0x0 ./Output/main_simone.o
+ .bss.button    0x00000000        0x1 ./Output/main_simone.o
+ .debug_macro   0x00000000      0xac0 ./Output/main_simone.o
+ .debug_macro   0x00000000      0x190 ./Output/main_simone.o
+ .debug_macro   0x00000000      0x34e ./Output/main_simone.o
+ .debug_macro   0x00000000       0x16 ./Output/main_simone.o
+ .debug_macro   0x00000000      0x164 ./Output/main_simone.o
+ .debug_macro   0x00000000       0x1c ./Output/main_simone.o
+ .debug_macro   0x00000000      0x182 ./Output/main_simone.o
+ .debug_macro   0x00000000       0xe7 ./Output/main_simone.o
+ .debug_macro   0x00000000       0x3a ./Output/main_simone.o
+ .debug_macro   0x00000000       0x1f ./Output/main_simone.o
+ .debug_macro   0x00000000       0x12 ./Output/main_simone.o
+ .debug_macro   0x00000000      0xfde ./Output/main_simone.o
+ .debug_macro   0x00000000       0xc3 ./Output/main_simone.o
+ .debug_macro   0x00000000      0x14f ./Output/main_simone.o
+ .debug_macro   0x00000000       0x80 ./Output/main_simone.o
+ .debug_macro   0x00000000       0x9e ./Output/main_simone.o
+ .debug_macro   0x00000000       0x22 ./Output/main_simone.o
+ .debug_macro   0x00000000       0x60 ./Output/main_simone.o
+ .debug_macro   0x00000000       0x24 ./Output/main_simone.o
+ .debug_macro   0x00000000       0x94 ./Output/main_simone.o
+ .debug_macro   0x00000000       0x3c ./Output/main_simone.o
+ .debug_macro   0x00000000       0x34 ./Output/main_simone.o
+ .debug_macro   0x00000000       0x57 ./Output/main_simone.o
+ .debug_macro   0x00000000       0x3c ./Output/main_simone.o
+ .debug_macro   0x00000000      0x370 ./Output/main_simone.o
+ .debug_macro   0x00000000       0x16 ./Output/main_simone.o
+ .debug_macro   0x00000000       0x4a ./Output/main_simone.o
+ .debug_macro   0x00000000       0x34 ./Output/main_simone.o
+ .debug_macro   0x00000000       0x10 ./Output/main_simone.o
+ .debug_macro   0x00000000       0x52 ./Output/main_simone.o
+ .debug_macro   0x00000000      0x1de ./Output/main_simone.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .group         0x00000000        0xc ./Output/uart.o
+ .text          0x00000000        0x0 ./Output/uart.o
+ .data          0x00000000        0x0 ./Output/uart.o
+ .bss           0x00000000        0x0 ./Output/uart.o
+ .debug_macro   0x00000000      0xac0 ./Output/uart.o
+ .debug_macro   0x00000000      0x190 ./Output/uart.o
+ .debug_macro   0x00000000      0x34e ./Output/uart.o
+ .debug_macro   0x00000000       0x16 ./Output/uart.o
+ .debug_macro   0x00000000      0x164 ./Output/uart.o
+ .debug_macro   0x00000000       0x1c ./Output/uart.o
+ .debug_macro   0x00000000      0x182 ./Output/uart.o
+ .debug_macro   0x00000000       0xe7 ./Output/uart.o
+ .debug_macro   0x00000000       0x3a ./Output/uart.o
+ .debug_macro   0x00000000       0x1f ./Output/uart.o
+ .debug_macro   0x00000000       0x12 ./Output/uart.o
+ .debug_macro   0x00000000      0xfde ./Output/uart.o
+ .debug_macro   0x00000000       0x22 ./Output/uart.o
+ .debug_macro   0x00000000       0x58 ./Output/uart.o
+ .debug_macro   0x00000000       0x22 ./Output/uart.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .group         0x00000000        0xc ./Output/startup.o
+ .text          0x00000000        0x0 ./Output/startup.o
+ .data          0x00000000        0x0 ./Output/startup.o
+ .bss           0x00000000        0x0 ./Output/startup.o
+ .debug_macro   0x00000000      0xac0 ./Output/startup.o
+ .debug_macro   0x00000000      0x190 ./Output/startup.o
+ .debug_macro   0x00000000      0x34e ./Output/startup.o
+ .debug_macro   0x00000000       0x16 ./Output/startup.o
+ .debug_macro   0x00000000      0x164 ./Output/startup.o
+ .debug_macro   0x00000000       0x1c ./Output/startup.o
+ .debug_macro   0x00000000      0x182 ./Output/startup.o
+ .debug_macro   0x00000000       0xe7 ./Output/startup.o
+ .debug_macro   0x00000000       0x3a ./Output/startup.o
+ .debug_macro   0x00000000       0x1f ./Output/startup.o
+ .debug_macro   0x00000000       0x12 ./Output/startup.o
+ .debug_macro   0x00000000      0xfde ./Output/startup.o
+ .debug_macro   0x00000000       0x22 ./Output/startup.o
+ .debug_macro   0x00000000       0x58 ./Output/startup.o
+ .debug_macro   0x00000000       0x22 ./Output/startup.o
+ .text          0x00000000       0x5c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen-stub.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen-stub.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen-stub.o)
+ .debug_info    0x00000000       0xbd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen-stub.o)
+ .debug_abbrev  0x00000000       0x78 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen-stub.o)
+ .debug_loclists
+                0x00000000       0x29 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen-stub.o)
+ .debug_aranges
+                0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen-stub.o)
+ .debug_rnglists
+                0x00000000       0x13 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen-stub.o)
+ .debug_line    0x00000000       0xf4 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen-stub.o)
+ .debug_str     0x00000000      0x19b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen-stub.o)
+ .comment       0x00000000       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen-stub.o)
+ .debug_frame   0x00000000       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen-stub.o)
+ .ARM.attributes
+                0x00000000       0x2d /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-strlen-stub.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .data          0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+ .bss           0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+ .ARM.extab     0x00000000        0x0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+ .eh_frame      0x00000000       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x00000000         0x00400000         xr
+RAM              0x20000000         0x00400000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./Output/tasks.o
+LOAD ./Output/list.o
+LOAD ./Output/timers.o
+LOAD ./Output/queue.o
+LOAD ./Output/heap_4.o
+LOAD ./Output/port.o
+LOAD ./Output/main_simone.o
+LOAD ./Output/uart.o
+LOAD ./Output/startup.o
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libnosys.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7-m/nofp/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libnosys.a
+END GROUP
+                0x00000008                        _Min_Heap_Size = 0x8
+                0x00000400                        _Min_Stack_Size = 0x400
+                0x20400000                        _estack = (ORIGIN (RAM) + LENGTH (RAM))
+
+.isr_vector     0x00000000       0x78
+                0x00000000                        __vector_table = .
+ *(.isr_vector)
+ .isr_vector    0x00000000       0x78 ./Output/startup.o
+                0x00000000                isr_vector
+                0x00000078                        . = ALIGN (0x4)
+
+.text           0x00000078      0x268
+ *(.text)
+ .text          0x00000078       0xa0 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+                0x00000078                memset
+ .text          0x00000118       0xec /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+                0x00000118                memcpy
+ *(.rodata*)
+ .rodata.vTaskStartScheduler.str1.1
+                0x00000204       0xd7 ./Output/tasks.o
+                                  0x5 (size before relaxing)
+ *fill*         0x000002db        0x1 
+ .rodata.uxTopUsedPriority
+                0x000002dc        0x4 ./Output/tasks.o
+ .rodata.prvCheckForValidListAndQueue.str1.1
+                0x000002e0        0x5 ./Output/timers.o
+ .rodata.xTimerCreateTimerTask.str1.1
+                0x000002e0        0x8 ./Output/timers.o
+ .rodata.myTimerCallback.str1.1
+                0x000002e0       0x30 ./Output/main_simone.o
+ .rodata.main.str1.1
+                0x000002e0       0x5f ./Output/main_simone.o
+ .rodata.prvGetRegistersFromStack.str1.1
+                0x000002e0       0x36 ./Output/startup.o
+ *(.constdata*)
+                0x000002e0                        _etext = .
+                0x000002e0                        _sidata = .
+
+.glue_7         0x000002e0        0x0
+ .glue_7        0x000002e0        0x0 linker stubs
+
+.glue_7t        0x000002e0        0x0
+ .glue_7t       0x000002e0        0x0 linker stubs
+
+.vfp11_veneer   0x000002e0        0x0
+ .vfp11_veneer  0x000002e0        0x0 linker stubs
+
+.v4_bx          0x000002e0        0x0
+ .v4_bx         0x000002e0        0x0 linker stubs
+
+.text.prvAddCurrentTaskToDelayedList
+                0x000002e0       0xb4
+ .text.prvAddCurrentTaskToDelayedList
+                0x000002e0       0xb4 ./Output/tasks.o
+
+.text.prvResetNextTaskUnblockTime
+                0x00000394       0x24
+ .text.prvResetNextTaskUnblockTime
+                0x00000394       0x24 ./Output/tasks.o
+
+.text.prvCheckTasksWaitingTermination
+                0x000003b8       0x48
+ .text.prvCheckTasksWaitingTermination
+                0x000003b8       0x48 ./Output/tasks.o
+
+.text.prvIdleTask
+                0x00000400        0x8
+ .text.prvIdleTask
+                0x00000400        0x8 ./Output/tasks.o
+
+.text.xTaskCreate
+                0x00000408      0x1c0
+ .text.xTaskCreate
+                0x00000408      0x1c0 ./Output/tasks.o
+                0x00000408                xTaskCreate
+
+.text.vTaskStartScheduler
+                0x000005c8       0x88
+ .text.vTaskStartScheduler
+                0x000005c8       0x88 ./Output/tasks.o
+                0x000005c8                vTaskStartScheduler
+
+.text.vTaskSuspendAll
+                0x00000650       0x10
+ .text.vTaskSuspendAll
+                0x00000650       0x10 ./Output/tasks.o
+                0x00000650                vTaskSuspendAll
+
+.text.xTaskGetTickCount
+                0x00000660        0xc
+ .text.xTaskGetTickCount
+                0x00000660        0xc ./Output/tasks.o
+                0x00000660                xTaskGetTickCount
+
+.text.uxTaskGetNumberOfTasks
+                0x0000066c        0xc
+ .text.uxTaskGetNumberOfTasks
+                0x0000066c        0xc ./Output/tasks.o
+                0x0000066c                uxTaskGetNumberOfTasks
+
+.text.xTaskIncrementTick
+                0x00000678      0x180
+ .text.xTaskIncrementTick
+                0x00000678      0x180 ./Output/tasks.o
+                0x00000678                xTaskIncrementTick
+
+.text.xTaskResumeAll
+                0x000007f8      0x150
+ .text.xTaskResumeAll
+                0x000007f8      0x150 ./Output/tasks.o
+                0x000007f8                xTaskResumeAll
+
+.text.vTaskDelay
+                0x00000948       0x3c
+ .text.vTaskDelay
+                0x00000948       0x3c ./Output/tasks.o
+                0x00000948                vTaskDelay
+
+.text.vTaskSwitchContext
+                0x00000984       0x68
+ .text.vTaskSwitchContext
+                0x00000984       0x68 ./Output/tasks.o
+                0x00000984                vTaskSwitchContext
+
+.text.vTaskPlaceOnEventList
+                0x000009ec       0x24
+ .text.vTaskPlaceOnEventList
+                0x000009ec       0x24 ./Output/tasks.o
+                0x000009ec                vTaskPlaceOnEventList
+
+.text.vTaskPlaceOnEventListRestricted
+                0x00000a10       0x4c
+ .text.vTaskPlaceOnEventListRestricted
+                0x00000a10       0x4c ./Output/tasks.o
+                0x00000a10                vTaskPlaceOnEventListRestricted
+
+.text.xTaskRemoveFromEventList
+                0x00000a5c       0xbc
+ .text.xTaskRemoveFromEventList
+                0x00000a5c       0xbc ./Output/tasks.o
+                0x00000a5c                xTaskRemoveFromEventList
+
+.text.vTaskInternalSetTimeOutState
+                0x00000b18       0x18
+ .text.vTaskInternalSetTimeOutState
+                0x00000b18       0x18 ./Output/tasks.o
+                0x00000b18                vTaskInternalSetTimeOutState
+
+.text.xTaskCheckForTimeOut
+                0x00000b30       0x70
+ .text.xTaskCheckForTimeOut
+                0x00000b30       0x70 ./Output/tasks.o
+                0x00000b30                xTaskCheckForTimeOut
+
+.text.vTaskMissedYield
+                0x00000ba0        0xc
+ .text.vTaskMissedYield
+                0x00000ba0        0xc ./Output/tasks.o
+                0x00000ba0                vTaskMissedYield
+
+.text.xTaskGetSchedulerState
+                0x00000bac       0x20
+ .text.xTaskGetSchedulerState
+                0x00000bac       0x20 ./Output/tasks.o
+                0x00000bac                xTaskGetSchedulerState
+
+.text.xTaskPriorityInherit
+                0x00000bcc       0xa0
+ .text.xTaskPriorityInherit
+                0x00000bcc       0xa0 ./Output/tasks.o
+                0x00000bcc                xTaskPriorityInherit
+
+.text.xTaskPriorityDisinherit
+                0x00000c6c       0x84
+ .text.xTaskPriorityDisinherit
+                0x00000c6c       0x84 ./Output/tasks.o
+                0x00000c6c                xTaskPriorityDisinherit
+
+.text.vTaskPriorityDisinheritAfterTimeout
+                0x00000cf0       0x94
+ .text.vTaskPriorityDisinheritAfterTimeout
+                0x00000cf0       0x94 ./Output/tasks.o
+                0x00000cf0                vTaskPriorityDisinheritAfterTimeout
+
+.text.pvTaskIncrementMutexHeldCount
+                0x00000d84       0x14
+ .text.pvTaskIncrementMutexHeldCount
+                0x00000d84       0x14 ./Output/tasks.o
+                0x00000d84                pvTaskIncrementMutexHeldCount
+
+.iplt           0x00000d98        0x0
+ .iplt          0x00000d98        0x0 ./Output/tasks.o
+
+.text.vListInitialise
+                0x00000d98       0x16
+ .text.vListInitialise
+                0x00000d98       0x16 ./Output/list.o
+                0x00000d98                vListInitialise
+
+.text.vListInitialiseItem
+                0x00000dae        0x6
+ .text.vListInitialiseItem
+                0x00000dae        0x6 ./Output/list.o
+                0x00000dae                vListInitialiseItem
+
+.text.vListInsert
+                0x00000db4       0x2e
+ .text.vListInsert
+                0x00000db4       0x2e ./Output/list.o
+                0x00000db4                vListInsert
+
+.text.uxListRemove
+                0x00000de2       0x1e
+ .text.uxListRemove
+                0x00000de2       0x1e ./Output/list.o
+                0x00000de2                uxListRemove
+
+.text.prvInsertTimerInActiveList
+                0x00000e00       0x3c
+ .text.prvInsertTimerInActiveList
+                0x00000e00       0x3c ./Output/timers.o
+
+.text.prvReloadTimer
+                0x00000e3c       0x26
+ .text.prvReloadTimer
+                0x00000e3c       0x26 ./Output/timers.o
+
+.text.prvProcessExpiredTimer
+                0x00000e64       0x40
+ .text.prvProcessExpiredTimer
+                0x00000e64       0x40 ./Output/timers.o
+
+.text.prvSampleTimeNow
+                0x00000ea4       0x4c
+ .text.prvSampleTimeNow
+                0x00000ea4       0x4c ./Output/timers.o
+
+.text.prvTimerTask
+                0x00000ef0      0x170
+ .text.prvTimerTask
+                0x00000ef0      0x170 ./Output/timers.o
+
+.text.prvCheckForValidListAndQueue
+                0x00001060       0x58
+ .text.prvCheckForValidListAndQueue
+                0x00001060       0x58 ./Output/timers.o
+
+.text.xTimerCreateTimerTask
+                0x000010b8       0x3c
+ .text.xTimerCreateTimerTask
+                0x000010b8       0x3c ./Output/timers.o
+                0x000010b8                xTimerCreateTimerTask
+
+.text.xTimerCreate
+                0x000010f4       0x4a
+ .text.xTimerCreate
+                0x000010f4       0x4a ./Output/timers.o
+                0x000010f4                xTimerCreate
+
+.text.xTimerGenericCommandFromTask
+                0x00001140       0x3c
+ .text.xTimerGenericCommandFromTask
+                0x00001140       0x3c ./Output/timers.o
+                0x00001140                xTimerGenericCommandFromTask
+
+.text.prvIsQueueEmpty
+                0x0000117c       0x16
+ .text.prvIsQueueEmpty
+                0x0000117c       0x16 ./Output/queue.o
+
+.text.prvCopyDataToQueue
+                0x00001192       0x66
+ .text.prvCopyDataToQueue
+                0x00001192       0x66 ./Output/queue.o
+
+.text.prvCopyDataFromQueue
+                0x000011f8       0x28
+ .text.prvCopyDataFromQueue
+                0x000011f8       0x28 ./Output/queue.o
+
+.text.prvNotifyQueueSetContainer
+                0x00001220       0x64
+ .text.prvNotifyQueueSetContainer
+                0x00001220       0x64 ./Output/queue.o
+
+.text.prvUnlockQueue
+                0x00001284       0x78
+ .text.prvUnlockQueue
+                0x00001284       0x78 ./Output/queue.o
+
+.text.xQueueGenericReset
+                0x000012fc       0x7a
+ .text.xQueueGenericReset
+                0x000012fc       0x7a ./Output/queue.o
+                0x000012fc                xQueueGenericReset
+
+.text.xQueueGenericCreate
+                0x00001376       0x42
+ .text.xQueueGenericCreate
+                0x00001376       0x42 ./Output/queue.o
+                0x00001376                xQueueGenericCreate
+
+.text.xQueueGenericSend
+                0x000013b8      0x138
+ .text.xQueueGenericSend
+                0x000013b8      0x138 ./Output/queue.o
+                0x000013b8                xQueueGenericSend
+
+.text.xQueueReceive
+                0x000014f0      0x10c
+ .text.xQueueReceive
+                0x000014f0      0x10c ./Output/queue.o
+                0x000014f0                xQueueReceive
+
+.text.xQueueSemaphoreTake
+                0x000015fc      0x138
+ .text.xQueueSemaphoreTake
+                0x000015fc      0x138 ./Output/queue.o
+                0x000015fc                xQueueSemaphoreTake
+
+.text.vQueueAddToRegistry
+                0x00001734       0x40
+ .text.vQueueAddToRegistry
+                0x00001734       0x40 ./Output/queue.o
+                0x00001734                vQueueAddToRegistry
+
+.text.vQueueWaitForMessageRestricted
+                0x00001774       0x46
+ .text.vQueueWaitForMessageRestricted
+                0x00001774       0x46 ./Output/queue.o
+                0x00001774                vQueueWaitForMessageRestricted
+
+.text.pvPortMalloc
+                0x000017bc      0x130
+ .text.pvPortMalloc
+                0x000017bc      0x130 ./Output/heap_4.o
+                0x000017bc                pvPortMalloc
+
+.text.vPortFree
+                0x000018ec       0xbc
+ .text.vPortFree
+                0x000018ec       0xbc ./Output/heap_4.o
+                0x000018ec                vPortFree
+
+.text.prvTaskExitError
+                0x000019a8       0x34
+ .text.prvTaskExitError
+                0x000019a8       0x34 ./Output/port.o
+
+.text.vPortSVCHandler
+                0x000019dc       0x24
+ .text.vPortSVCHandler
+                0x000019dc       0x24 ./Output/port.o
+                0x000019dc                vPortSVCHandler
+
+.text.prvPortStartFirstTask
+                0x00001a00       0x20
+ .text.prvPortStartFirstTask
+                0x00001a00       0x20 ./Output/port.o
+
+.text.xPortPendSVHandler
+                0x00001a20       0x44
+ .text.xPortPendSVHandler
+                0x00001a20       0x44 ./Output/port.o
+                0x00001a20                xPortPendSVHandler
+
+.text.pxPortInitialiseStack
+                0x00001a64       0x24
+ .text.pxPortInitialiseStack
+                0x00001a64       0x24 ./Output/port.o
+                0x00001a64                pxPortInitialiseStack
+
+.text.vPortEnterCritical
+                0x00001a88       0x34
+ .text.vPortEnterCritical
+                0x00001a88       0x34 ./Output/port.o
+                0x00001a88                vPortEnterCritical
+
+.text.vPortExitCritical
+                0x00001abc       0x18
+ .text.vPortExitCritical
+                0x00001abc       0x18 ./Output/port.o
+                0x00001abc                vPortExitCritical
+
+.text.xPortSysTickHandler
+                0x00001ad4       0x30
+ .text.xPortSysTickHandler
+                0x00001ad4       0x30 ./Output/port.o
+                0x00001ad4                xPortSysTickHandler
+
+.text.vPortSetupTimerInterrupt
+                0x00001b04       0x16
+ .text.vPortSetupTimerInterrupt
+                0x00001b04       0x16 ./Output/port.o
+                0x00001b04                vPortSetupTimerInterrupt
+
+.text.xPortStartScheduler
+                0x00001b1c       0xe4
+ .text.xPortStartScheduler
+                0x00001b1c       0xe4 ./Output/port.o
+                0x00001b1c                xPortStartScheduler
+
+.text.EmergencyCallback
+                0x00001c00        0x2
+ .text.EmergencyCallback
+                0x00001c00        0x2 ./Output/main_simone.o
+                0x00001c00                EmergencyCallback
+
+.text.PedestrianCrossing
+                0x00001c02        0x2
+ .text.PedestrianCrossing
+                0x00001c02        0x2 ./Output/main_simone.o
+                0x00001c02                PedestrianCrossing
+
+.text.EmergencyVehicle
+                0x00001c04        0x2
+ .text.EmergencyVehicle
+                0x00001c04        0x2 ./Output/main_simone.o
+                0x00001c04                EmergencyVehicle
+
+.text.CentralMonitoring
+                0x00001c06        0x2
+ .text.CentralMonitoring
+                0x00001c06        0x2 ./Output/main_simone.o
+                0x00001c06                CentralMonitoring
+
+.text.myTimerCallback
+                0x00001c08       0x50
+ .text.myTimerCallback
+                0x00001c08       0x50 ./Output/main_simone.o
+                0x00001c08                myTimerCallback
+
+.text.TrafficLight
+                0x00001c58       0x24
+ .text.TrafficLight
+                0x00001c58       0x24 ./Output/main_simone.o
+                0x00001c58                TrafficLight
+
+.text.startup.main
+                0x00001c7c       0xd8
+ .text.startup.main
+                0x00001c7c       0xd8 ./Output/main_simone.o
+                0x00001c7c                main
+
+.text.UART_init
+                0x00001d54        0xe
+ .text.UART_init
+                0x00001d54        0xe ./Output/uart.o
+                0x00001d54                UART_init
+
+.text.UART_print_int
+                0x00001d62       0x5c
+ .text.UART_print_int
+                0x00001d62       0x5c ./Output/uart.o
+                0x00001d62                UART_print_int
+
+.text.UART_printf
+                0x00001dbe       0x3e
+ .text.UART_printf
+                0x00001dbe       0x3e ./Output/uart.o
+                0x00001dbe                UART_printf
+
+.text.Default_Handler
+                0x00001e00        0xc
+ .text.Default_Handler
+                0x00001e00        0xc ./Output/startup.o
+
+.text.HardFault_Handler
+                0x00001f00       0x18
+ .text.HardFault_Handler
+                0x00001f00       0x18 ./Output/startup.o
+
+.text.Reset_Handler
+                0x00001f18        0x4
+ .text.Reset_Handler
+                0x00001f18        0x4 ./Output/startup.o
+                0x00001f18                Reset_Handler
+
+.text.prvGetRegistersFromStack
+                0x00001f1c       0x60
+ .text.prvGetRegistersFromStack
+                0x00001f1c       0x60 ./Output/startup.o
+                0x00001f1c                prvGetRegistersFromStack
+
+.rel.dyn        0x00001f7c        0x0
+ .rel.iplt      0x00001f7c        0x0 ./Output/tasks.o
+
+.ARM.exidx      0x00001f7c        0x8
+ .ARM.exidx     0x00001f7c        0x8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+
+.data           0x20000000        0x0
+                0x20000000                        . = ALIGN (0x8)
+                0x20000000                        _data = .
+                0x20000000                        _sdata = .
+ *(vtable)
+ *(.data)
+                0x20000000                        _edata = .
+
+.igot.plt       0x20000000        0x0
+ .igot.plt      0x20000000        0x0 ./Output/tasks.o
+
+.data.uxCriticalNesting
+                0x20000000        0x4
+ .data.uxCriticalNesting
+                0x20000000        0x4 ./Output/port.o
+
+.bss            0x20000004        0x4
+                0x20000008                        . = ALIGN (0x8)
+ *fill*         0x20000004        0x4 
+                0x20000008                        _bss = .
+                0x20000008                        _sbss = .
+ *(.bss)
+                0x20000008                        _ebss = .
+
+.bss.uxSchedulerSuspended
+                0x20000008        0x4
+ .bss.uxSchedulerSuspended
+                0x20000008        0x4 ./Output/tasks.o
+
+.bss.xIdleTaskHandles
+                0x2000000c        0x4
+ .bss.xIdleTaskHandles
+                0x2000000c        0x4 ./Output/tasks.o
+
+.bss.xNextTaskUnblockTime
+                0x20000010        0x4
+ .bss.xNextTaskUnblockTime
+                0x20000010        0x4 ./Output/tasks.o
+
+.bss.uxTaskNumber
+                0x20000014        0x4
+ .bss.uxTaskNumber
+                0x20000014        0x4 ./Output/tasks.o
+
+.bss.xNumOfOverflows
+                0x20000018        0x4
+ .bss.xNumOfOverflows
+                0x20000018        0x4 ./Output/tasks.o
+
+.bss.xYieldPendings
+                0x2000001c        0x4
+ .bss.xYieldPendings
+                0x2000001c        0x4 ./Output/tasks.o
+
+.bss.xPendedTicks
+                0x20000020        0x4
+ .bss.xPendedTicks
+                0x20000020        0x4 ./Output/tasks.o
+
+.bss.xSchedulerRunning
+                0x20000024        0x4
+ .bss.xSchedulerRunning
+                0x20000024        0x4 ./Output/tasks.o
+
+.bss.uxTopReadyPriority
+                0x20000028        0x4
+ .bss.uxTopReadyPriority
+                0x20000028        0x4 ./Output/tasks.o
+
+.bss.xTickCount
+                0x2000002c        0x4
+ .bss.xTickCount
+                0x2000002c        0x4 ./Output/tasks.o
+
+.bss.uxCurrentNumberOfTasks
+                0x20000030        0x4
+ .bss.uxCurrentNumberOfTasks
+                0x20000030        0x4 ./Output/tasks.o
+
+.bss.xSuspendedTaskList
+                0x20000034       0x14
+ .bss.xSuspendedTaskList
+                0x20000034       0x14 ./Output/tasks.o
+
+.bss.uxDeletedTasksWaitingCleanUp
+                0x20000048        0x4
+ .bss.uxDeletedTasksWaitingCleanUp
+                0x20000048        0x4 ./Output/tasks.o
+
+.bss.xTasksWaitingTermination
+                0x2000004c       0x14
+ .bss.xTasksWaitingTermination
+                0x2000004c       0x14 ./Output/tasks.o
+
+.bss.xPendingReadyList
+                0x20000060       0x14
+ .bss.xPendingReadyList
+                0x20000060       0x14 ./Output/tasks.o
+
+.bss.pxOverflowDelayedTaskList
+                0x20000074        0x4
+ .bss.pxOverflowDelayedTaskList
+                0x20000074        0x4 ./Output/tasks.o
+
+.bss.pxDelayedTaskList
+                0x20000078        0x4
+ .bss.pxDelayedTaskList
+                0x20000078        0x4 ./Output/tasks.o
+
+.bss.xDelayedTaskList2
+                0x2000007c       0x14
+ .bss.xDelayedTaskList2
+                0x2000007c       0x14 ./Output/tasks.o
+
+.bss.xDelayedTaskList1
+                0x20000090       0x14
+ .bss.xDelayedTaskList1
+                0x20000090       0x14 ./Output/tasks.o
+
+.bss.pxReadyTasksLists
+                0x200000a4       0xb4
+ .bss.pxReadyTasksLists
+                0x200000a4       0xb4 ./Output/tasks.o
+
+.bss.pxCurrentTCB
+                0x20000158        0x4
+ .bss.pxCurrentTCB
+                0x20000158        0x4 ./Output/tasks.o
+                0x20000158                pxCurrentTCB
+
+.bss.xLastTime.0
+                0x2000015c        0x4
+ .bss.xLastTime.0
+                0x2000015c        0x4 ./Output/timers.o
+
+.bss.xTimerTaskHandle
+                0x20000160        0x4
+ .bss.xTimerTaskHandle
+                0x20000160        0x4 ./Output/timers.o
+
+.bss.xTimerQueue
+                0x20000164        0x4
+ .bss.xTimerQueue
+                0x20000164        0x4 ./Output/timers.o
+
+.bss.pxOverflowTimerList
+                0x20000168        0x4
+ .bss.pxOverflowTimerList
+                0x20000168        0x4 ./Output/timers.o
+
+.bss.pxCurrentTimerList
+                0x2000016c        0x4
+ .bss.pxCurrentTimerList
+                0x2000016c        0x4 ./Output/timers.o
+
+.bss.xActiveTimerList2
+                0x20000170       0x14
+ .bss.xActiveTimerList2
+                0x20000170       0x14 ./Output/timers.o
+
+.bss.xActiveTimerList1
+                0x20000184       0x14
+ .bss.xActiveTimerList1
+                0x20000184       0x14 ./Output/timers.o
+
+.bss.xQueueRegistry
+                0x20000198       0x50
+ .bss.xQueueRegistry
+                0x20000198       0x50 ./Output/queue.o
+                0x20000198                xQueueRegistry
+
+.bss.xNumberOfSuccessfulFrees
+                0x200001e8        0x4
+ .bss.xNumberOfSuccessfulFrees
+                0x200001e8        0x4 ./Output/heap_4.o
+
+.bss.xNumberOfSuccessfulAllocations
+                0x200001ec        0x4
+ .bss.xNumberOfSuccessfulAllocations
+                0x200001ec        0x4 ./Output/heap_4.o
+
+.bss.xMinimumEverFreeBytesRemaining
+                0x200001f0        0x4
+ .bss.xMinimumEverFreeBytesRemaining
+                0x200001f0        0x4 ./Output/heap_4.o
+
+.bss.xFreeBytesRemaining
+                0x200001f4        0x4
+ .bss.xFreeBytesRemaining
+                0x200001f4        0x4 ./Output/heap_4.o
+
+.bss.pxEnd      0x200001f8        0x4
+ .bss.pxEnd     0x200001f8        0x4 ./Output/heap_4.o
+
+.bss.xStart     0x200001fc        0x8
+ .bss.xStart    0x200001fc        0x8 ./Output/heap_4.o
+
+.bss.ucHeap     0x20000204     0xf000
+ .bss.ucHeap    0x20000204     0xf000 ./Output/heap_4.o
+
+.bss.ulMaxPRIGROUPValue
+                0x2000f204        0x4
+ .bss.ulMaxPRIGROUPValue
+                0x2000f204        0x4 ./Output/port.o
+
+.bss.ucMaxSysCallPriority
+                0x2000f208        0x1
+ .bss.ucMaxSysCallPriority
+                0x2000f208        0x1 ./Output/port.o
+
+.bss.xMutex     0x2000f20c        0x4
+ .bss.xMutex    0x2000f20c        0x4 ./Output/main_simone.o
+                0x2000f20c                xMutex
+
+.bss.EmergencyTimer
+                0x2000f210        0x4
+ .bss.EmergencyTimer
+                0x2000f210        0x4 ./Output/main_simone.o
+                0x2000f210                EmergencyTimer
+
+.bss.TrafficTimer
+                0x2000f214        0x4
+ .bss.TrafficTimer
+                0x2000f214        0x4 ./Output/main_simone.o
+                0x2000f214                TrafficTimer
+
+.bss.traffic_light_street
+                0x2000f218        0x1
+ .bss.traffic_light_street
+                0x2000f218        0x1 ./Output/main_simone.o
+                0x2000f218                traffic_light_street
+
+.bss.psr        0x2000f21c        0x4
+ .bss.psr       0x2000f21c        0x4 ./Output/startup.o
+                0x2000f21c                psr
+
+.bss.pc         0x2000f220        0x4
+ .bss.pc        0x2000f220        0x4 ./Output/startup.o
+                0x2000f220                pc
+
+.bss.lr         0x2000f224        0x4
+ .bss.lr        0x2000f224        0x4 ./Output/startup.o
+                0x2000f224                lr
+
+.bss.r12        0x2000f228        0x4
+ .bss.r12       0x2000f228        0x4 ./Output/startup.o
+                0x2000f228                r12
+
+.bss.r3         0x2000f22c        0x4
+ .bss.r3        0x2000f22c        0x4 ./Output/startup.o
+                0x2000f22c                r3
+
+.bss.r2         0x2000f230        0x4
+ .bss.r2        0x2000f230        0x4 ./Output/startup.o
+                0x2000f230                r2
+
+.bss.r1         0x2000f234        0x4
+ .bss.r1        0x2000f234        0x4 ./Output/startup.o
+                0x2000f234                r1
+
+.bss.r0         0x2000f238        0x4
+ .bss.r0        0x2000f238        0x4 ./Output/startup.o
+                0x2000f238                r0
+
+.heap           0x2000f23c      0x40c
+                0x2000f240                        . = ALIGN (0x8)
+ *fill*         0x2000f23c        0x4 
+                [!provide]                        PROVIDE (end = .)
+                [!provide]                        PROVIDE (_end = .)
+                0x2000f240                        _heap_bottom = .
+                0x2000f248                        . = (. + _Min_Heap_Size)
+ *fill*         0x2000f240        0x8 
+                0x2000f248                        _heap_top = .
+                0x2000f648                        . = (. + _Min_Stack_Size)
+ *fill*         0x2000f248      0x400 
+                0x2000f648                        . = ALIGN (0x8)
+                0x20400000                        __StackTop = (ORIGIN (RAM) + LENGTH (RAM))
+                0x203ffc00                        __StackLimit = (__StackTop - _Min_Stack_Size)
+                [!provide]                        PROVIDE (__stack = __StackTop)
+                0x00000001                        ASSERT ((__StackLimit >= _heap_top), region RAM overflowed with stack)
+OUTPUT(./Output/demo.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000     0x81a3
+ .debug_info    0x00000000     0x314f ./Output/tasks.o
+ .debug_info    0x0000314f      0x2b2 ./Output/list.o
+ .debug_info    0x00003401     0x146c ./Output/timers.o
+ .debug_info    0x0000486d     0x2344 ./Output/queue.o
+ .debug_info    0x00006bb1      0x5d7 ./Output/heap_4.o
+ .debug_info    0x00007188      0x465 ./Output/port.o
+ .debug_info    0x000075ed      0x699 ./Output/main_simone.o
+ .debug_info    0x00007c86      0x1b9 ./Output/uart.o
+ .debug_info    0x00007e3f      0x1fc ./Output/startup.o
+ .debug_info    0x0000803b      0x135 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .debug_info    0x00008170       0x33 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+
+.debug_abbrev   0x00000000     0x19a0
+ .debug_abbrev  0x00000000      0x515 ./Output/tasks.o
+ .debug_abbrev  0x00000515      0x105 ./Output/list.o
+ .debug_abbrev  0x0000061a      0x43c ./Output/timers.o
+ .debug_abbrev  0x00000a56      0x464 ./Output/queue.o
+ .debug_abbrev  0x00000eba      0x2d2 ./Output/heap_4.o
+ .debug_abbrev  0x0000118c      0x2a7 ./Output/port.o
+ .debug_abbrev  0x00001433      0x1dc ./Output/main_simone.o
+ .debug_abbrev  0x0000160f      0x148 ./Output/uart.o
+ .debug_abbrev  0x00001757      0x16a ./Output/startup.o
+ .debug_abbrev  0x000018c1       0xb7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .debug_abbrev  0x00001978       0x28 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+
+.debug_loclists
+                0x00000000     0x3dad
+ .debug_loclists
+                0x00000000     0x1b78 ./Output/tasks.o
+ .debug_loclists
+                0x00001b78       0x77 ./Output/list.o
+ .debug_loclists
+                0x00001bef      0x9a7 ./Output/timers.o
+ .debug_loclists
+                0x00002596     0x109f ./Output/queue.o
+ .debug_loclists
+                0x00003635      0x36a ./Output/heap_4.o
+ .debug_loclists
+                0x0000399f       0xb1 ./Output/port.o
+ .debug_loclists
+                0x00003a50       0xa3 ./Output/main_simone.o
+ .debug_loclists
+                0x00003af3       0xba ./Output/uart.o
+ .debug_loclists
+                0x00003bad       0x29 ./Output/startup.o
+ .debug_loclists
+                0x00003bd6      0x1d7 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+
+.debug_aranges  0x00000000      0x618
+ .debug_aranges
+                0x00000000      0x1f8 ./Output/tasks.o
+ .debug_aranges
+                0x000001f8       0x40 ./Output/list.o
+ .debug_aranges
+                0x00000238       0xd0 ./Output/timers.o
+ .debug_aranges
+                0x00000308      0x148 ./Output/queue.o
+ .debug_aranges
+                0x00000450       0x58 ./Output/heap_4.o
+ .debug_aranges
+                0x000004a8       0x78 ./Output/port.o
+ .debug_aranges
+                0x00000520       0x50 ./Output/main_simone.o
+ .debug_aranges
+                0x00000570       0x30 ./Output/uart.o
+ .debug_aranges
+                0x000005a0       0x38 ./Output/startup.o
+ .debug_aranges
+                0x000005d8       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .debug_aranges
+                0x000005f8       0x20 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+
+.debug_rnglists
+                0x00000000      0x71d
+ .debug_rnglists
+                0x00000000      0x316 ./Output/tasks.o
+ .debug_rnglists
+                0x00000316       0x2b ./Output/list.o
+ .debug_rnglists
+                0x00000341       0xdc ./Output/timers.o
+ .debug_rnglists
+                0x0000041d      0x1ca ./Output/queue.o
+ .debug_rnglists
+                0x000005e7       0x4c ./Output/heap_4.o
+ .debug_rnglists
+                0x00000633       0x6e ./Output/port.o
+ .debug_rnglists
+                0x000006a1       0x38 ./Output/main_simone.o
+ .debug_rnglists
+                0x000006d9       0x1f ./Output/uart.o
+ .debug_rnglists
+                0x000006f8       0x25 ./Output/startup.o
+
+.debug_macro    0x00000000     0x4366
+ .debug_macro   0x00000000      0x289 ./Output/tasks.o
+ .debug_macro   0x00000289      0xac0 ./Output/tasks.o
+ .debug_macro   0x00000d49       0x24 ./Output/tasks.o
+ .debug_macro   0x00000d6d       0x22 ./Output/tasks.o
+ .debug_macro   0x00000d8f       0x60 ./Output/tasks.o
+ .debug_macro   0x00000def       0x94 ./Output/tasks.o
+ .debug_macro   0x00000e83       0x3c ./Output/tasks.o
+ .debug_macro   0x00000ebf       0x34 ./Output/tasks.o
+ .debug_macro   0x00000ef3       0x16 ./Output/tasks.o
+ .debug_macro   0x00000f09      0x11c ./Output/tasks.o
+ .debug_macro   0x00001025       0x9b ./Output/tasks.o
+ .debug_macro   0x000010c0       0x57 ./Output/tasks.o
+ .debug_macro   0x00001117      0x370 ./Output/tasks.o
+ .debug_macro   0x00001487       0x16 ./Output/tasks.o
+ .debug_macro   0x0000149d       0x4a ./Output/tasks.o
+ .debug_macro   0x000014e7       0x34 ./Output/tasks.o
+ .debug_macro   0x0000151b       0x10 ./Output/tasks.o
+ .debug_macro   0x0000152b       0x52 ./Output/tasks.o
+ .debug_macro   0x0000157d      0x1de ./Output/tasks.o
+ .debug_macro   0x0000175b       0x16 ./Output/tasks.o
+ .debug_macro   0x00001771       0x29 ./Output/tasks.o
+ .debug_macro   0x0000179a       0x16 ./Output/tasks.o
+ .debug_macro   0x000017b0       0x3c ./Output/tasks.o
+ .debug_macro   0x000017ec      0x34e ./Output/tasks.o
+ .debug_macro   0x00001b3a       0x16 ./Output/tasks.o
+ .debug_macro   0x00001b50      0x164 ./Output/tasks.o
+ .debug_macro   0x00001cb4       0x1c ./Output/tasks.o
+ .debug_macro   0x00001cd0      0x182 ./Output/tasks.o
+ .debug_macro   0x00001e52       0xe7 ./Output/tasks.o
+ .debug_macro   0x00001f39       0x3a ./Output/tasks.o
+ .debug_macro   0x00001f73       0x1f ./Output/tasks.o
+ .debug_macro   0x00001f92       0x12 ./Output/tasks.o
+ .debug_macro   0x00001fa4      0xfde ./Output/tasks.o
+ .debug_macro   0x00002f82       0xc3 ./Output/tasks.o
+ .debug_macro   0x00003045      0x14f ./Output/tasks.o
+ .debug_macro   0x00003194       0x98 ./Output/tasks.o
+ .debug_macro   0x0000322c       0x17 ./Output/tasks.o
+ .debug_macro   0x00003243      0x171 ./Output/list.o
+ .debug_macro   0x000033b4      0x1c0 ./Output/timers.o
+ .debug_macro   0x00003574       0x80 ./Output/timers.o
+ .debug_macro   0x000035f4       0x9e ./Output/timers.o
+ .debug_macro   0x00003692      0x203 ./Output/queue.o
+ .debug_macro   0x00003895      0x201 ./Output/heap_4.o
+ .debug_macro   0x00003a96      0x162 ./Output/port.o
+ .debug_macro   0x00003bf8      0x190 ./Output/port.o
+ .debug_macro   0x00003d88      0x1cd ./Output/main_simone.o
+ .debug_macro   0x00003f55       0x85 ./Output/main_simone.o
+ .debug_macro   0x00003fda       0x22 ./Output/main_simone.o
+ .debug_macro   0x00003ffc       0x58 ./Output/main_simone.o
+ .debug_macro   0x00004054       0x22 ./Output/main_simone.o
+ .debug_macro   0x00004076       0x16 ./Output/main_simone.o
+ .debug_macro   0x0000408c       0x16 ./Output/main_simone.o
+ .debug_macro   0x000040a2       0x16 ./Output/main_simone.o
+ .debug_macro   0x000040b8      0x170 ./Output/main_simone.o
+ .debug_macro   0x00004228       0x9f ./Output/uart.o
+ .debug_macro   0x000042c7       0x9f ./Output/startup.o
+
+.debug_line     0x00000000     0x6f9a
+ .debug_line    0x00000000     0x2aad ./Output/tasks.o
+ .debug_line    0x00002aad      0x471 ./Output/list.o
+ .debug_line    0x00002f1e      0xc36 ./Output/timers.o
+ .debug_line    0x00003b54     0x1b12 ./Output/queue.o
+ .debug_line    0x00005666      0x84a ./Output/heap_4.o
+ .debug_line    0x00005eb0      0x582 ./Output/port.o
+ .debug_line    0x00006432      0x414 ./Output/main_simone.o
+ .debug_line    0x00006846      0x2b5 ./Output/uart.o
+ .debug_line    0x00006afb      0x231 ./Output/startup.o
+ .debug_line    0x00006d2c      0x1b1 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .debug_line    0x00006edd       0xbd /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+
+.debug_str      0x00000000    0x17027
+ .debug_str     0x00000000    0x17027 ./Output/tasks.o
+                              0x136a1 (size before relaxing)
+ .debug_str     0x00017027     0xff05 ./Output/list.o
+ .debug_str     0x00017027    0x12b73 ./Output/timers.o
+ .debug_str     0x00017027    0x128d3 ./Output/queue.o
+ .debug_str     0x00017027    0x119f8 ./Output/heap_4.o
+ .debug_str     0x00017027     0xed29 ./Output/port.o
+ .debug_str     0x00017027    0x1348b ./Output/main_simone.o
+ .debug_str     0x00017027     0xc72b ./Output/uart.o
+ .debug_str     0x00017027     0xc778 ./Output/startup.o
+ .debug_str     0x00017027      0x1a5 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .debug_str     0x00017027       0xa8 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+
+.comment        0x00000000       0x26
+ .comment       0x00000000       0x26 ./Output/tasks.o
+                                 0x27 (size before relaxing)
+ .comment       0x00000026       0x27 ./Output/list.o
+ .comment       0x00000026       0x27 ./Output/timers.o
+ .comment       0x00000026       0x27 ./Output/queue.o
+ .comment       0x00000026       0x27 ./Output/heap_4.o
+ .comment       0x00000026       0x27 ./Output/port.o
+ .comment       0x00000026       0x27 ./Output/main_simone.o
+ .comment       0x00000026       0x27 ./Output/uart.o
+ .comment       0x00000026       0x27 ./Output/startup.o
+ .comment       0x00000026       0x27 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+
+.ARM.attributes
+                0x00000000       0x2b
+ .ARM.attributes
+                0x00000000       0x2d ./Output/tasks.o
+ .ARM.attributes
+                0x0000002d       0x2d ./Output/list.o
+ .ARM.attributes
+                0x0000005a       0x2d ./Output/timers.o
+ .ARM.attributes
+                0x00000087       0x2d ./Output/queue.o
+ .ARM.attributes
+                0x000000b4       0x2d ./Output/heap_4.o
+ .ARM.attributes
+                0x000000e1       0x2d ./Output/port.o
+ .ARM.attributes
+                0x0000010e       0x2d ./Output/main_simone.o
+ .ARM.attributes
+                0x0000013b       0x2d ./Output/uart.o
+ .ARM.attributes
+                0x00000168       0x2d ./Output/startup.o
+ .ARM.attributes
+                0x00000195       0x2d /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+ .ARM.attributes
+                0x000001c2       0x1b /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)
+
+.debug_frame    0x00000000     0x10e0
+ .debug_frame   0x00000000      0x668 ./Output/tasks.o
+ .debug_frame   0x00000668       0x6c ./Output/list.o
+ .debug_frame   0x000006d4      0x27c ./Output/timers.o
+ .debug_frame   0x00000950      0x41c ./Output/queue.o
+ .debug_frame   0x00000d6c       0xe4 ./Output/heap_4.o
+ .debug_frame   0x00000e50       0xec ./Output/port.o
+ .debug_frame   0x00000f3c       0xa4 ./Output/main_simone.o
+ .debug_frame   0x00000fe0       0x7c ./Output/uart.o
+ .debug_frame   0x0000105c       0x58 ./Output/startup.o
+ .debug_frame   0x000010b4       0x2c /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memset.o)
+
+.debug_line_str
+                0x00000000       0x95
+ .debug_line_str
+                0x00000000       0x95 /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7-m/nofp/libc_nano.a(libc_a-memcpy.o)

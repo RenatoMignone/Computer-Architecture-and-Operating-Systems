@@ -1,0 +1,97 @@
+1. Hardware Timer Basics
+
+# Definition and Fundamental Characteristics
+
+A timer (sometimes called a counter) is a specialized hardware component found in many microcontrollers.
+Primary functions:
+- Counts up or down based on configuration
+- Example: An 8-bit timer counts from 0 to 255
+- Most timers "roll over" when reaching their maximum value
+    - An 8-bit timer resets to 0 after reaching 255
+
+# Timer Configuration and Capabilities
+
+Timers can be configured using special function registers within the microcontroller
+Configurable options include:
+  1. Custom rollover points (e.g., rolling over at 100 instead of 255)
+  2. Connecting to other hardware or peripherals
+  3. Automatic pin toggling
+
+# Common Hardware Timer Functions
+
+1. **Output Compare (OC)**
+    - Toggles a pin when the timer reaches a specific value
+2. **Input Capture (IC)**
+    - Measures the number of timer counts between pin events
+3. **Pulse Width Modulation (PWM)**
+    - Toggles a pin at specific timer points
+    - Controls electrical power to devices by adjusting duty cycle
+
+---------------------------------------------------------------------------
+
+2. Prescaler
+
+- Timers require a clock source
+- Most are connected to the microcontroller's main CPU clock
+- Timer increments (ticks) occur with each clock pulse
+- **Prescaler**: Hardware component that divides the clock source
+    - Enables adjustment of timer period
+    - Allows control over timer speed and resolution
+
+---------------------------------------------------------------------------
+
+4. The FreeRTOS Tick
+
+# Tick Count and Time Measurement
+
+- FreeRTOS kernel measures time using a tick count variable
+- Timer interrupt (RTOS tick interrupt) increments tick count
+- Provides temporal accuracy for time measurement
+
+# Context Switching Example
+
+1. RTOS idle task is executing
+2. RTOS tick occurs
+3. Control transfers to tick Interrupt Service Routine (ISR)
+4. ISR makes higher-priority tasks ready
+5. Context switches to higher-priority task
+6. Execution is preemptive (interrupted task preempted without voluntarily suspending)
+
+---------------------------------------------------------------------------
+
+5. Performing Periodic Operations
+
+- Approach 1: New Task with vTaskDelay()
+	- Creates a new task and uses vTaskDelay() to block for a set time
+	- Drawback: Requires up to 1KB additional memory
+	- Less memory-efficient
+
+- Approach 2: Task with xTaskGetTickCount()
+	- Use xTaskGetTickCount() to get tick count since scheduler start
+	- Periodically compare current tick count with a timestamp
+	- More memory-efficient than creating new tasks
+
+- Approach 3: Hardware Timers
+	- Microcontrollers often include hardware timers
+	- Can count up/down and trigger interrupts
+	- Potential limitations:
+    	- Higher precision possible
+    	- Less portable code
+    	- Used with interrupts
+
+- Approach 4: FreeRTOS Software Timers
+	- Built on top of FreeRTOS tick timer
+	- Similar to hardware interrupts but operate at task level
+	- Enable development of portable applications
+
+---------------------------------------------------------------------------
+
+6. Software Timers in FreeRTOS
+
+- Managed through FreeRTOS API
+- Callback function assigned on timer creation
+- Dependent on tick timer resolution
+- Based on FreeRTOS queues
+- Two timer types:
+    1. One-shot: Callback executed once after timer expires
+    2. Auto-reload: Callback executed periodically
