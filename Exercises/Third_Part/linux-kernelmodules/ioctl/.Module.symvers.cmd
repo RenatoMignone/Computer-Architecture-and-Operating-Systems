@@ -1,1 +1,0 @@
-savedcmd_/home/ren/CyberSecurity/CAOS/Exercises/Third_Part/linux-kernelmodules/ioctl/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/ren/CyberSecurity/CAOS/Exercises/Third_Part/linux-kernelmodules/ioctl/Module.symvers -T /home/ren/CyberSecurity/CAOS/Exercises/Third_Part/linux-kernelmodules/ioctl/modules.order -i Module.symvers -e 

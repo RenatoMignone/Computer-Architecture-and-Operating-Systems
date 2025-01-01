@@ -1,1 +1,0 @@
-savedcmd_/home/ren/CyberSecurity/CAOS/Exercises/Third_Part/Drivers/chdev/modules.order := {   echo /home/ren/CyberSecurity/CAOS/Exercises/Third_Part/Drivers/chdev/chrdev.o; :; } > /home/ren/CyberSecurity/CAOS/Exercises/Third_Part/Drivers/chdev/modules.order
