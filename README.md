@@ -2,6 +2,11 @@
 
 This repository contains exercises and laboratories related to **Computer Architecture** and **Operating Systems**. The main focus is on practical applications and implementation using the FreeRTOS operating system, allowing for hands-on experience with system APIs for creating embedded applications.
 
+The course is divided into **three sections**:
+1. The first section covers **assembly**, **inline assembly in C**, and an **introduction to FreeRTOS**.
+2. The second section focuses on **FreeRTOS**—its architecture, knowledge, and key concepts like **semaphores**, **queues**, **interrupts**, **timers**, and more.
+3. The third section is primarily about **kernel modules**, including the **compiling of the Linux kernel** or specific modules that we wanted to add. It also delves into **device drivers** managed by modules.
+
 ## Repository Structure
 
 ### Folders
@@ -30,9 +35,13 @@ FreeRTOS is an open-source real-time operating system kernel for embedded device
 - **FreeRTOS**  
   Using FreeRTOS, you will learn how to implement multitasking, use system services, and manage resources in embedded applications. The exercises will help you get hands-on experience with the FreeRTOS API, exploring its features and capabilities in real-time systems.
 
+- **Kernel Modules**  
+  In the final section, you will work with **Linux kernel modules**, learn how to compile the kernel or add custom modules, and dive into **device drivers** managed by these modules. This will give you a deeper understanding of kernel-level programming and the integration of device drivers.
+
 ## How to Use This Repository
 
 1. **Clone the Repository**  
    To get started, clone the repository to your local machine:
    ```bash
    git clone --recursive https://github.com/RenatoMignone/Computer-Architecture-and-Operating-Systems.git
+
