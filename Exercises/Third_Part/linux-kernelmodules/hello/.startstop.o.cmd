@@ -1,0 +1,1 @@
+savedcmd_/home/ren/CyberSecurity/CAOS/Exercises/Third_Part/linux-kernelmodules/hello/startstop.o := ld -m elf_x86_64 -z noexecstack --no-warn-rwx-segments   -r -o /home/ren/CyberSecurity/CAOS/Exercises/Third_Part/linux-kernelmodules/hello/startstop.o @/home/ren/CyberSecurity/CAOS/Exercises/Third_Part/linux-kernelmodules/hello/startstop.mod 

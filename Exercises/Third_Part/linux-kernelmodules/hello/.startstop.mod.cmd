@@ -1,0 +1,1 @@
+savedcmd_/home/ren/CyberSecurity/CAOS/Exercises/Third_Part/linux-kernelmodules/hello/startstop.mod := printf '%s\n'   start.o stop.o | awk '!x[$$0]++ { print("/home/ren/CyberSecurity/CAOS/Exercises/Third_Part/linux-kernelmodules/hello/"$$0) }' > /home/ren/CyberSecurity/CAOS/Exercises/Third_Part/linux-kernelmodules/hello/startstop.mod
