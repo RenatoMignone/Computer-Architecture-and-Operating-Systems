@@ -1,0 +1,1 @@
+savedcmd_/home/ren/CyberSecurity/CAOS/Laboratories/Lab7/Solutions/Ex2/ex2.o := ld -m elf_x86_64 -z noexecstack --no-warn-rwx-segments   -r -o /home/ren/CyberSecurity/CAOS/Laboratories/Lab7/Solutions/Ex2/ex2.o @/home/ren/CyberSecurity/CAOS/Laboratories/Lab7/Solutions/Ex2/ex2.mod 

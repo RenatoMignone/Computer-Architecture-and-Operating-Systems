@@ -1,1 +1,0 @@
-savedcmd_/home/ren/CyberSecurity/CAOS/Laboratories/Lab6/esercizio4/modules.order := {   echo /home/ren/CyberSecurity/CAOS/Laboratories/Lab6/esercizio4/esercizio4.o;   echo /home/ren/CyberSecurity/CAOS/Laboratories/Lab6/esercizio4/startstop.o; :; } > /home/ren/CyberSecurity/CAOS/Laboratories/Lab6/esercizio4/modules.order

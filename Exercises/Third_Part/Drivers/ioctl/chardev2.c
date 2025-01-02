@@ -1,7 +1,7 @@
 /* 
  * chardev2.c - Create an input/output character device 
  */ 
- 
+
 #include <linux/atomic.h> 
 #include <linux/cdev.h> 
 #include <linux/delay.h> 
@@ -17,6 +17,10 @@
 #include <asm/errno.h> 
  
 #include "chardev.h" 
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
 #define SUCCESS 0 
 #define DEVICE_NAME "char_dev" 
 #define BUF_LEN 80 
@@ -26,16 +30,20 @@ enum {
     CDEV_EXCLUSIVE_OPEN, 
 }; 
  
-/* Is the device open right now? Used to prevent concurrent access into 
- * the same device 
- */ 
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/* Is the device open right now? Used to prevent concurrent access into the same device*/ 
 static atomic_t already_open = ATOMIC_INIT(CDEV_NOT_USED); 
  
 /* The message the device will give when asked */ 
 static char message[BUF_LEN + 1]; 
- 
-static struct class *cls; 
- 
+static struct class *cls;
+
+
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
 /* This is called whenever a process attempts to open the device file */ 
 static int device_open(struct inode *inode, struct file *file) 
 { 
@@ -44,7 +52,10 @@ static int device_open(struct inode *inode, struct file *file)
     try_module_get(THIS_MODULE); 
     return SUCCESS; 
 } 
- 
+
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
 static int device_release(struct inode *inode, struct file *file) 
 { 
     pr_info("device_release(%p,%p)\n", inode, file); 
@@ -52,10 +63,18 @@ static int device_release(struct inode *inode, struct file *file)
     module_put(THIS_MODULE); 
     return SUCCESS; 
 } 
- 
-/* This function is called whenever a process which has already opened the 
- * device file attempts to read from it. 
- */ 
+
+
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/* Called when a process, which already opened the dev file, attempts to read from it.*/
+
+//The first parameter is a pointer to the file structure that represents the opened file 
+//The second parameter is a pointer to the user-space buffer where the data will be written. __user is a macro that tells the compiler that the buffer is in the user space.
+//The third parameter is the length of the buffer. Tells the driver how much data can safely be written to the buffer.
+//The fourth parameter is a pointer to the current position in the file. It is used to keep track of where the last read operation ended.
+
 static ssize_t device_read(struct file *file, /* see include/linux/fs.h   */ 
                            char __user *buffer, /* buffer to be filled  */ 
                            size_t length, /* length of the buffer     */ 
@@ -63,6 +82,7 @@ static ssize_t device_read(struct file *file, /* see include/linux/fs.h   */
 { 
     /* Number of bytes actually written to the buffer */ 
     int bytes_read = 0; 
+
     /* How far did the process reading the message get? Useful if the message 
      * is larger than the size of the buffer we get to fill in device_read. 
      */ 
@@ -97,6 +117,11 @@ static ssize_t device_read(struct file *file, /* see include/linux/fs.h   */
     return bytes_read; 
 } 
  
+
+
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
 /* called when somebody tries to write into our device file. */ 
 static ssize_t device_write(struct file *file, const char __user *buffer, 
                             size_t length, loff_t *offset) 
@@ -105,6 +130,12 @@ static ssize_t device_write(struct file *file, const char __user *buffer,
  
     pr_info("device_write(%p,%p,%ld)", file, buffer, length); 
  
+
+    //this loop will copy the data from the user space to the kernel space
+    //so the get user function, copies a single data item from the user space to the kernel space
+    
+    //The "message" array represents the data in the kernel space, so the location where the data will be copied
+    //The "buffer" represents the data in the user space that have to be copied to the kernel space
     for (i = 0; i < length && i < BUF_LEN; i++) 
         get_user(message[i], buffer + i); 
  
@@ -112,79 +143,93 @@ static ssize_t device_write(struct file *file, const char __user *buffer,
     return i; 
 } 
  
-/* This function is called whenever a process tries to do an ioctl on our 
- * device file. We get two extra parameters (additional to the inode and file 
- * structures, which all device functions get): the number of the ioctl called 
- * and the parameter given to the ioctl function. 
- * 
- * If the ioctl is write or read/write (meaning output is returned to the 
- * calling process), the ioctl call returns the output of this function. 
- */ 
-static long 
-device_ioctl(struct file *file, /* ditto */ 
-             unsigned int ioctl_num, /* number and param for ioctl */ 
-             unsigned long ioctl_param) 
+
+
+
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+//ioctl stands for input/output control. It is a system call that allows a user to control a device driver.
+
+//This function provides an interface to perform custom operations on the character device that are not covered by standard read or write.
+static long device_ioctl(struct file *file, //file: Represents the file structure associated with the device.
+             unsigned int ioctl_num, //ioctl_num: The specific ioctl command number.
+             unsigned long ioctl_param)  //ioctl_param: A parameter passed from user space, typically used to send data or a pointer.
 { 
     int i; 
     long ret = SUCCESS; 
  
     /* We don't want to talk to two processes at the same time. */ 
+    //So we are checking wether the device is already open or not
     if (atomic_cmpxchg(&already_open, CDEV_NOT_USED, CDEV_EXCLUSIVE_OPEN)) 
         return -EBUSY; 
  
+
+
+
     /* Switch according to the ioctl called */ 
+    //here each ioctl command corresponds to a number, so the ioctl_num parameter is used to determine which command was called
     switch (ioctl_num) { 
-    case IOCTL_SET_MSG: { 
-        /* Receive a pointer to a message (in user space) and set that to 
-         * be the device's message. Get the parameter given to ioctl by 
-         * the process. 
-         */ 
-        char __user *tmp = (char __user *)ioctl_param; 
-        char ch; 
- 
-        /* Find the length of the message */ 
-        get_user(ch, tmp); 
-        for (i = 0; ch && i < BUF_LEN; i++, tmp++) 
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //IOCTL_SET_MSG: Sets a message in the device's internal buffer (message).
+        case IOCTL_SET_MSG: { 
+
+            //The user provides a pointer to a message in user space (ioctl_param).
+            char __user *tmp = (char __user *)ioctl_param; 
+            char ch; 
+    
+            /* Find the length of the message */ 
+            // get_user reads characters from user space to determine the message length.
+            //Ensures no buffer overflow by capping the message length at BUF_LEN.*/
             get_user(ch, tmp); 
- 
-        device_write(file, (char __user *)ioctl_param, i, NULL); 
-        break; 
+            for (i = 0; ch && i < BUF_LEN; i++, tmp++) 
+                get_user(ch, tmp); 
+    
+            //We call our write function, to copy the message from the user space to the kernel space, so to write 
+            //the message stored in the ioctl_param to the device's internal buffer.
+            device_write(file, (char __user *)ioctl_param, i, NULL); 
+            break; 
+        } 
+
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //IOCTL_GET_MSG: Retrieves the current message stored in the device.
+        //Here we read the current device message in the device driver, and put it in the ioctl_param buffer
+        //So the ioctl_param buffer, will act as the buffer in the user space where the message will be copied
+        case IOCTL_GET_MSG: { 
+            loff_t offset = 0; 
+    
+            //we read 99 bytes from the device's internal buffer (message) and copy them to the user space buffer (ioctl_param).
+            i = device_read(file, (char __user *)ioctl_param, 99, &offset); 
+    
+            //Put a zero at the end of the buffer, so it will be properly terminated. 
+            put_user('\0', (char __user *)ioctl_param + i); 
+            break; 
+        } 
+
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //IOCTL_GET_NTH_BYTE: Fetches the nth byte of the current message.
+        case IOCTL_GET_NTH_BYTE: 
+            //This ioctl is both input (ioctl_param) and output (the return value of this function).
+            //Returns the nth byte of the message, where ioctl_param specifies the index.
+            ret = (long)message[ioctl_param]; 
+            break; 
     } 
-    case IOCTL_GET_MSG: { 
-        loff_t offset = 0; 
  
-        /* Give the current message to the calling process - the parameter 
-         * we got is a pointer, fill it. 
-         */ 
-        i = device_read(file, (char __user *)ioctl_param, 99, &offset); 
- 
-        /* Put a zero at the end of the buffer, so it will be properly 
-         * terminated. 
-         */ 
-        put_user('\0', (char __user *)ioctl_param + i); 
-        break; 
-    } 
-    case IOCTL_GET_NTH_BYTE: 
-        /* This ioctl is both input (ioctl_param) and output (the return 
-         * value of this function). 
-         */ 
-        ret = (long)message[ioctl_param]; 
-        break; 
-    } 
- 
-    /* We're now ready for our next caller */ 
+    /* We're now ready for our next caller */
+    //so we set the device to not used. 
     atomic_set(&already_open, CDEV_NOT_USED); 
  
     return ret; 
 } 
  
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
 /* Module Declarations */ 
- 
-/* This structure will hold the functions to be called when a process does 
- * something to the device we created. Since a pointer to this structure 
- * is kept in the devices table, it can't be local to init_module. NULL is 
- * for unimplemented functions. 
- */ 
 static struct file_operations fops = { 
     .read = device_read, 
     .write = device_write, 
@@ -192,7 +237,11 @@ static struct file_operations fops = {
     .open = device_open, 
     .release = device_release, /* a.k.a. close */ 
 }; 
- 
+
+
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
 /* Initialize the module - Register the character device */ 
 static int __init chardev2_init(void) 
 { 
@@ -206,18 +255,23 @@ static int __init chardev2_init(void)
         return ret_val; 
     } 
  
-#if LINUX_VERSION_CODE >= KERNEL_VERSION(6, 4, 0) 
-    cls = class_create(DEVICE_FILE_NAME); 
-#else 
-    cls = class_create(THIS_MODULE, DEVICE_FILE_NAME); 
-#endif 
+    #if LINUX_VERSION_CODE >= KERNEL_VERSION(6, 4, 0) 
+        cls = class_create(DEVICE_FILE_NAME); 
+    #else 
+        cls = class_create(THIS_MODULE, DEVICE_FILE_NAME); 
+    #endif 
+    
     device_create(cls, NULL, MKDEV(MAJOR_NUM, 0), NULL, DEVICE_FILE_NAME); 
  
     pr_info("Device created on /dev/%s\n", DEVICE_FILE_NAME); 
  
     return 0; 
 } 
- 
+
+
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
 /* Cleanup - unregister the appropriate file from /proc */ 
 static void __exit chardev2_exit(void) 
 { 
@@ -227,7 +281,10 @@ static void __exit chardev2_exit(void)
     /* Unregister the device */ 
     unregister_chrdev(MAJOR_NUM, DEVICE_NAME); 
 } 
- 
+
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
 module_init(chardev2_init); 
 module_exit(chardev2_exit); 
  

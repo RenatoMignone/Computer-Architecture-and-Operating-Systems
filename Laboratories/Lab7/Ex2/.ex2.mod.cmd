@@ -1,0 +1,1 @@
+savedcmd_/home/ren/CyberSecurity/CAOS/Laboratories/Lab7/Solutions/Ex2/ex2.mod := printf '%s\n'   uart_driver.o uart.o | awk '!x[$$0]++ { print("/home/ren/CyberSecurity/CAOS/Laboratories/Lab7/Solutions/Ex2/"$$0) }' > /home/ren/CyberSecurity/CAOS/Laboratories/Lab7/Solutions/Ex2/ex2.mod

@@ -1,1 +1,0 @@
-savedcmd_/home/ren/CyberSecurity/CAOS/Exercises/Drivers/ioctl/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/ren/CyberSecurity/CAOS/Exercises/Drivers/ioctl/Module.symvers -T /home/ren/CyberSecurity/CAOS/Exercises/Drivers/ioctl/modules.order -i Module.symvers -e 

@@ -1,1 +1,0 @@
-savedcmd_/home/ren/CyberSecurity/CAOS/Laboratories/Lab7/lab7-device-drivers/Ex1/Drivers/chdev/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/ren/CyberSecurity/CAOS/Laboratories/Lab7/lab7-device-drivers/Ex1/Drivers/chdev/Module.symvers -T /home/ren/CyberSecurity/CAOS/Laboratories/Lab7/lab7-device-drivers/Ex1/Drivers/chdev/modules.order -i Module.symvers -e 

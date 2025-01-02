@@ -1,1 +1,0 @@
-savedcmd_/home/ren/CyberSecurity/CAOS/Laboratories/Lab7/lab7-device-drivers/Ex1/Drivers/chdev/chrdev2.mod := printf '%s\n'   chrdev2.o | awk '!x[$$0]++ { print("/home/ren/CyberSecurity/CAOS/Laboratories/Lab7/lab7-device-drivers/Ex1/Drivers/chdev/"$$0) }' > /home/ren/CyberSecurity/CAOS/Laboratories/Lab7/lab7-device-drivers/Ex1/Drivers/chdev/chrdev2.mod

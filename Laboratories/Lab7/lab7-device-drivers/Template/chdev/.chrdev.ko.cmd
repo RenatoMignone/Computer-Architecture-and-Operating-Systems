@@ -1,1 +1,0 @@
-savedcmd_/home/dicarlo/kernel/chdev/chrdev.ko := ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/dicarlo/kernel/chdev/chrdev.ko /home/dicarlo/kernel/chdev/chrdev.o /home/dicarlo/kernel/chdev/chrdev.mod.o
