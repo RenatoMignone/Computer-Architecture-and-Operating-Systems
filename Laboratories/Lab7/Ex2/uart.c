@@ -1,17 +1,24 @@
 #include "uart.h"
 
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+//Function used to initialize the UART device
 void uart_init(Uart_TxRx *uart, void __iomem *base_addr){
 
 	if (!uart || !base_addr) {
         pr_err("Invalid arguments: uart=%p, base_addr=%p\n", uart, base_addr);
         return;
     }
+    //setting the offset of the registers
 	uart -> data_reg = base_addr + 0x0;
 	uart -> status_reg = base_addr + 0x18;
 }
 
 
-// Function to check if transmit buffer is ready
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+//Function to check if transmit buffer is ready
+//So Tx is the transmit buffer
 static uint32_t uart_is_tx_ready(Uart_TxRx *uart) {
 
     int ret = 0;
@@ -24,10 +31,13 @@ static uint32_t uart_is_tx_ready(Uart_TxRx *uart) {
     return ret;
 }
 
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+//Function to transmit data, so like a printf
 uint32_t uart_tx(Uart_TxRx * uart, const uint8_t *str, uint32_t n_bytes){
 
     if (str == NULL) {
-
 		// Return an error if the string pointer is NULL: NO DATA TO TRANSMIT
         return UART_TX_ERROR;  
 	}
@@ -50,6 +60,8 @@ uint32_t uart_tx(Uart_TxRx * uart, const uint8_t *str, uint32_t n_bytes){
         }
 
         // Transmit the current byte
+        //Writeb macro is defined in the io.h header file and is used to write a byte to a memory address
+        //in this case we are writing a byte to the data register of the UART, in particular the first one of the str pointer
         writeb(*str, uart -> data_reg);
 
         // Move to the next byte
@@ -63,3 +75,5 @@ uint32_t uart_tx(Uart_TxRx * uart, const uint8_t *str, uint32_t n_bytes){
 
     return UART_TX_COMPLETE;
 }
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/

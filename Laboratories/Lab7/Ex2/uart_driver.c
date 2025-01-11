@@ -11,13 +11,19 @@
 /*Limit the scope of the variable to this file*/
 static void __iomem *mapped_addr;
 
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
 int init_module(void){
 
+	//initialize the device, the UART, using the struct defined in the header file.
 	Uart_TxRx *pl011;
 
 	/* Greet the desired person. Visualize with sudo dmesg
 	 * WARNING: insmod doesn't accept spaces
 	*/
+	//Physical to Virtual Mapping: ioremap takes a physical address (UART_BASE_ADDR) and a size (UART_SIZE)
+	//and maps this physical memory region into the kernel's virtual address space.
 	mapped_addr = ioremap(UART_BASE_ADDR, UART_SIZE);
 
 	if (!mapped_addr) {
@@ -34,6 +40,10 @@ int init_module(void){
 	return 0;
 }
 
+
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
 void cleanup_module(void){
 
 	if (mapped_addr) {
@@ -44,4 +54,7 @@ void cleanup_module(void){
 	pr_info("Exiting from the module!\n");
 }
 
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
 MODULE_LICENSE("GPL");

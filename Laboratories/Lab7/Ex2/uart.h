@@ -6,16 +6,18 @@
 #define UART_BASE_ADDR 0x09000000
 #define UART_LAST_ADDR 0x09000fff
 #define UART_SIZE UART_LAST_ADDR - UART_BASE_ADDR
-
 /* Define the timeout value for the UART */
 #define TIMEOUT 1000
 
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
 typedef struct {
-    void __iomem *status_reg;
-    void __iomem *data_reg;
+    void __iomem *status_reg; //register to check if the UART is ready to transmit
+    void __iomem *data_reg;   //register for the data to be transmitted
 } Uart_TxRx;
 
 /* Define the return values for the uart */
+//defines for the status
 enum {
   UART_TX_ERROR = -1,
   UART_TX_INCOMPLETE = 0,
@@ -23,6 +25,10 @@ enum {
   UART_TX_BUSY = 2,
 };
 
+
+/*----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------*/
+//Functions
 void uart_init(Uart_TxRx *uart, void __iomem *base_addr);
 
 uint32_t uart_tx(Uart_TxRx *uart, const uint8_t *str, uint32_t n_bytes);
